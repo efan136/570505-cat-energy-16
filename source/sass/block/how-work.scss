@@ -1,0 +1,31 @@
+.how-work {
+  margin-bottom: 22px;
+}
+
+.how-work__wrapper {
+  width: 280px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.how-work__heading {
+  margin:0;
+  margin-bottom: 23px;
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: 400;
+  color: #111111;
+}
+
+.how-work__list {
+  @include reset ();
+}
+
+.how-work__item {
+  margin-bottom: 20px;
+  padding-left: 81px;
+  font-size:14px;
+  line-height:18px;
+  font-weight:400;
+  color:#444444;
+}

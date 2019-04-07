@@ -1,8 +1,8 @@
 .set-program {
   padding-top:29px;
   padding-bottom:22px;
-  background-color:#68b738;
-  background:  url("../img/index-background-mobile@1x.jpg") no-repeat 0 0;
+  background-color:#ffffff;
+  background:  url("../img/index-background-mobile@1x.jpg") no-repeat center 0;
 }
 
 .set-program__wrapper {
@@ -11,4 +11,27 @@
   margin:0 auto;
 }
 
+.set-program__heading {
+  margin:0;
+  margin-bottom:20px;
+  text-align:center;
+  font-size:36px;
+  line-height:36px;
+  font-weight:400;
+  color:#ffffff;
+}
 
+.set-program__slogan {
+  margin:0;
+  margin-bottom:300px;
+  text-align:center;
+  font-size:14px;
+  line-height:14px;
+  font-weight:400;
+  color:#ffffff;
+  text-transform:uppercase;
+}
+
+.set-program__link {
+  margin-bottom:22px;
+}

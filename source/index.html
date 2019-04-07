@@ -81,9 +81,11 @@
           <div class="example__results">
             <p class="example__price">Затраты на питание: 15 000 руб.</p>
             <img class="example__image" src="img/cat.jpg" width="268" height="229px">
-            <p class="example__range-before">Было</p>
-            <input class="example__range" type="range" name="fat-cat">
-            <p class="example__range-before">Стало</p>
+            <div class="example_range-wrapper">
+              <p class="example__range-before">Было</p>
+              <input class="example__range" type="range" name="fat-cat">
+              <p class="example__range-after">Стало</p>
+            </div>
           </div>
         </div>
       </section>
@@ -91,9 +93,9 @@
         <div class="contacts__wrapper">
           <h2 class="visually-hidden">Контакты</h2>
           <h3 class="contacts__heading">приглашаем к сотрудничеству дилеров!</h3>
-          <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <p class="contacts__adress">ул. Большая<br> Конюшенная, д. 19/8<br> Санкт-Петербург</p>
         </div>
-        <iframe src="https://yandex.ru/map-widget/v1/-/CCusFS8g" width="560" height="400"></iframe>
+        <iframe class="contacts__map" src="https://yandex.ru/map-widget/v1/-/CCusFS8g" width="560" height="400"></iframe>
       </section>
     </main>
     <footer class="main-footer">
@@ -101,7 +103,7 @@
         <a class="main-footer___logo logo-letters" href="">
           <img class="logo-letters__img" src="img/logo-footer.svg" width="128" height="24" alt="Cat energy">
         </a>
-        <ul class="footer-list social-list">
+        <ul class="footer__list social-list">
           <li class="social-list__item"><a class="social-list__link" href="">Мы Вконтакте</a></li>
           <li class="social-list__item"><a class="social-list__link" href="">Наш инстаграм</a></li>
           <li class="social-list__item"><a class="social-list__link" href="">Наш фейсбук</a></li>
@@ -113,5 +115,4 @@
       </div>
     </footer>
   </body>
->>>>>>> c5e4a45... поправил отступы
 </html>

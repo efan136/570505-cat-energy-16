@@ -1,6 +1,6 @@
 
 @import "block/scaffoldings.scss";
-@inport "mixins.scss";
+@import "mixins.scss";
 @import "block/main-header.scss";
 @import "block/main-nav.scss";
 @import "block/site-list.scss";
@@ -19,6 +19,3 @@
 @import "block/extra.scss";
 @import "block/form.scss";
 
-body {
-    background-color:green;
-}
