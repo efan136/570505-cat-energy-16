@@ -1,0 +1,80 @@
+.extra {
+  padding-top: 30px;
+  padding-bottom: 35px;
+}
+
+.extra__wrapper {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.extra__heading {
+  margin: 0;
+  padding-bottom: 30px;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #111111;
+  border-bottom: 1px solid #ededed;
+}
+
+.extra__list {
+  @include reset ();
+  margin-bottom: 39px;
+}
+
+.extra__title {
+  margin: 0;
+  margin-bottom: 15px;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #222222;
+  text-transform: uppercase;
+}
+
+.extra__description {
+  margin: 0;
+  margin-bottom: 14px;
+}
+
+.extra__parametr {
+  margin: 0;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  color: #444444;
+}
+
+.extra__value {
+  margin: 0;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  color: #444444;
+  text-transform: uppercase;
+}
+
+.extra__item {
+  padding-top: 35px;
+  padding-bottom: 17px;
+  border-bottom: 1px solid #ededed;
+}
+
+.extra__promo {
+  padding-top: 187px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+  background: url("../img/gift-photo-mobile@1x.jpg") no-repeat 0 0;
+}
+
+.extra__promo-text {
+  margin: 0;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+}
