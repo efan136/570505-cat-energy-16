@@ -1,0 +1,51 @@
+.programms__wrapper {
+  padding: 0 20px;
+}
+
+.programms__list {
+  @include reset ();
+}
+
+.programms__item {
+  margin-bottom: 20px;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  background: #f2f2f2;
+}
+
+.programms__heading {
+  margin: 0 0 30px 0;
+  padding-left: 60px;
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: 400;
+  color: #111111;
+  text-transform: uppercase;
+}
+
+.programms__description {
+  margin: 0 0 30px 0;
+  padding-bottom: 20px;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #444444;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.programms__link {
+  margin: 0;
+  padding: 20px 0;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #111111;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &:active {
+    opacity: 0.3;
+  }
+}

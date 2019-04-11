@@ -1,0 +1,42 @@
+
+.main-catalog__box {
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.main-catalog__list {
+  @include reset ();
+}
+
+
+.main-catalog__item {
+  padding-top: 22px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #ededed;
+}
+
+.main-catalog__title {
+  margin: 0;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #111111;
+  text-transform: uppercase;
+}
+
+.main-catalog__title-link {
+  text-decoration: none;
+}
+
+.main-catalog__parametr,
+.main-catalog__value {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #444444;
+}
+
+.main-catalog__link {
+  font-size: 16px;
+  line-height: 20px;
+}
