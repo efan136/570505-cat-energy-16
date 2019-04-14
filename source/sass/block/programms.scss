@@ -49,3 +49,46 @@
     opacity: 0.3;
   }
 }
+
+@media (min-width: 768px) {
+  .programms__wrapper {
+    padding: 0 30px;
+  }
+
+  .programms__item {
+    margin-bottom: 20px;
+    padding: 80px 280px 62px 52px;
+  }
+
+  .programms__link {
+    padding: 0;
+  }
+
+  .programms__description {
+    margin-bottom: 64px;
+  }
+}
+
+@media (min-width: 1220px) {
+  .programms {
+    margin-bottom: 26px;
+  }
+  .programms__wrapper {
+    padding: 0 110px;
+  }
+
+  .programms__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .programms__item {
+    width: 468px;
+    padding-right: 52px;
+    margin-right: 76px;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+}
