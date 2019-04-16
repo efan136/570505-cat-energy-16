@@ -32,12 +32,13 @@
     justify-content: flex-end;
     flex-wrap: wrap;
     width: 480px;
-    padding-top: 19px;
+    padding-top: 10px;
 
   }
 
   .site-list__item {
-    margin-left: 36px;
+    margin-left: 25px;
+    padding: 6px 0;
     &:first-child {
       margin-left: 0;
     }
@@ -48,6 +49,7 @@
     font-size: 18px;
     line-height: 25px;
     color: #222222;
+    font-weight: 400;
   }
 }
 
@@ -55,6 +57,18 @@
   .site-list {
     width: 570px;
     justify-content: flex-end;
-    padding-top: 24px;
+    padding-top: 15px;
   }
+
+  .site-list__item {
+    margin-left: 32px;
+    padding: 6px 0;
+}
+  .site-list__link {
+    font-size: 19px;
+    color: #222222;
+    font-weight: 400;
+  }
+
+
 }

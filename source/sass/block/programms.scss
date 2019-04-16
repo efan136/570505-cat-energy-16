@@ -90,8 +90,9 @@
 
 @media (min-width: 1220px) {
   .programms {
-    margin-bottom: 48px;
+    margin-bottom: 43px;
   }
+
   .programms__wrapper {
     padding: 0 110px;
   }
@@ -109,5 +110,14 @@
     &:nth-child(2n) {
       margin-right: 0;
     }
+  }
+
+  .programms__heading {
+    margin-bottom: 79px;
+    padding-left: 160px;
+  }
+
+  .programms__description {
+    margin-bottom: 9px;
   }
 }
