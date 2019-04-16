@@ -30,7 +30,7 @@
 
 @media (min-width: 768px) {
   .set-program {
-    background: url("../img/index-can-tablet@1x.jpg")  no-repeat center bottom 40px;
+    background: url("../img/index-can-tablet@1x.jpg")  no-repeat center bottom ;
     min-height: 869px;
     margin-bottom: 0;
   }
@@ -38,21 +38,28 @@
     padding: 60px 162px 0 120px;
   }
   .set-program__heading {
-    margin-bottom: 46px;
+    margin-bottom: 40px;
+    font-size: 60px;
+    line-height: 60px;
     text-align: left;
     color: #111111;
   }
 
   .set-program__slogan {
-  margin-bottom: 45px;
-  text-align: left;
-  color: #111111;
+    margin-bottom: 46px;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+    color: #111111;
 }
 
-.set-program__link {
-  width: 244px;
-}
-
+  .set-program__link {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 15px 20px;
+   }
 }
 
 @media (min-width: 1220px) {
@@ -63,6 +70,11 @@
   }
   .set-program__wrapper {
     padding: 110px 760px 0 191px;
+  }
+
+  .set-program__heading {
+    font-size: 60px;
+    line-height: 60px;
   }
 
   }

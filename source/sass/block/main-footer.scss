@@ -10,10 +10,42 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 94px;
+  height: 94px;
   border-bottom: 1px solid #d9d9d9;
 }
 
 .footer__list {
   border-bottom: 1px solid #d9d9d9;
+}
+
+@media (min-width: 768px) {
+  .main-footer__wrapper {
+    padding: 58px 30px;
+    display: flex;
+  }
+
+  .main-footer___logo {
+    height: 24px;
+    margin-right: 151px;
+}
+
+  .footer__list {
+    width: 124px;
+    margin-right: 138px;
+}
+
+  .footer__copyright {
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 1220px) {
+  .main-footer__wrapper {
+    padding: 58px 110px;
+  }
+
+  .main-footer___logo {
+    height: 24px;
+    margin-right: 412px;
+}
 }

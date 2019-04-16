@@ -17,7 +17,7 @@
 
 .programms__heading {
   margin: 0 0 30px 0;
-  padding-left: 60px;
+  text-align: center;
   font-size: 24px;
   line-height: 37px;
   font-weight: 400;
@@ -28,6 +28,7 @@
 .programms__description {
   margin: 0 0 30px 0;
   padding-bottom: 20px;
+  font-family: Arial;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
@@ -51,27 +52,45 @@
 }
 
 @media (min-width: 768px) {
+   .programms {
+    margin-bottom: 40px;
+  }
+
   .programms__wrapper {
     padding: 0 30px;
   }
 
   .programms__item {
-    margin-bottom: 20px;
-    padding: 80px 280px 62px 52px;
+  min-height: 240px;
+    margin-bottom: 32px;
+    padding: 73px 280px 60px 52px;
+  }
+
+  .programms__heading {
+    margin-bottom: 28px;
+    font-size: 36px;
+    line-height: 37px;
+    text-align: left;
+  }
+
+  .programms__description {
+    margin-bottom: 36px;
+    font-size: 16px;
+    line-height: 24px;
   }
 
   .programms__link {
     padding: 0;
-  }
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
 
-  .programms__description {
-    margin-bottom: 64px;
   }
 }
 
 @media (min-width: 1220px) {
   .programms {
-    margin-bottom: 26px;
+    margin-bottom: 48px;
   }
   .programms__wrapper {
     padding: 0 110px;
