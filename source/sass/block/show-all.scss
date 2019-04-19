@@ -47,3 +47,27 @@
     color: rgba(68, 68, 68, 0.3);
   }
 }
+
+@media (min-width: 768px) {
+  .show-all {
+    width: 249px;
+    padding: 164px 37px 40px;
+  }
+
+  .show-all__heading {
+    font-size: 20px;
+    padding: 0 40px;
+    margin-bottom: 28px;
+  }
+
+  .show-all__slogan {
+  padding: 0 40px;
+    margin-bottom: 85px;
+    font-family: Arial;
+    font-size: 16px;
+  }
+
+  .show-all__box {
+    padding: 0;
+  }
+}

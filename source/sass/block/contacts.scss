@@ -42,8 +42,9 @@
   .contacts {
     background-color: #ffffff;
   }
+
   .contacts__wrapper {
-    padding: 75px 72px 59px;
+    padding: 69px 72px 59px;
     justify-content: space-between;
   }
 
@@ -63,9 +64,8 @@
   }
 
   .contacts__map {
-  height: 400px;
+    height: 400px;
   }
-
 }
 
 @media (min-width: 1220px) {
@@ -83,7 +83,6 @@
 
   .contacts__heading {
     width: 169px;
-
   }
 
   .contacts__adress {

@@ -18,3 +18,13 @@
   font-weight: 400;
   color: #111111;
 }
+
+@media (min-width: 768px) {
+  .page-main__heading-wrapper {
+    padding: 56px 30px 10px;
+    margin-bottom: 155px;
+  }
+  .page-main__heading {
+    font-size: 60px;
+  }
+}
