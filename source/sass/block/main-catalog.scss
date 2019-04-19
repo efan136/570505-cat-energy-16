@@ -139,3 +139,29 @@
 
   }
 }
+
+@media (min-width: 1300px) {
+  .main-catalog__wrapper {
+    padding: 0 110px;
+  }
+
+  .main-catalog__box {
+    width: 169px;
+  }
+
+  .main-catalog__img-link {
+    width: 100%;
+  }
+
+  .main-catalog__item {
+    margin-right: 80px;
+
+    &:nth-child(2n) {
+      margin-right: 80px;
+    }
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+  }
+}

@@ -159,3 +159,67 @@
   text-align: left;
   }
 }
+
+@media (min-width: 1300px) {
+  .extra {
+    margin-top: -40px;
+  }
+
+  .extra__wrapper {
+    padding: 0 110px;
+  }
+
+  .extra__columns {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .extra__list {
+    margin-bottom: 0;
+}
+
+  .extra__item {
+    display: flex;
+    justify-content: space-between;
+    width: 895px;
+    padding: 16px 0;
+  }
+
+  .extra__item-column {
+    width: 610px;
+  }
+
+  .extra__title {
+    width: 285px;
+  }
+
+  .extra__description {
+    width: 285px;
+  }
+
+  .extra__item-column {
+    align-items: center;
+    margin: 0;
+  }
+
+  .extra__parametr {
+    text-align: left;
+  }
+
+  .extra__link {
+    width: 245px;
+  }
+
+   .extra__promo {
+    width: 159px;
+    padding: 190px 43px 43px;
+    background: url("../img/gift-photo-desktop@1x.jpg") no-repeat 0 0;
+    background-size: cover;
+  }
+
+  .extra__promo-text {
+    text-align: center;
+  }
+}
+
+

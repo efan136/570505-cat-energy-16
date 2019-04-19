@@ -71,3 +71,26 @@
     padding: 0;
   }
 }
+
+@media (min-width: 1300px) {
+  .show-all {
+    width: 169px;
+    padding-top: 170px;
+    background-color: #ffffff;
+    border: 1px solid #e7e7e7;
+  }
+
+  .show-all__heading {
+    font-size: 20px;
+    padding: 0;
+
+  }
+
+  .show-all__slogan {
+  padding: 0 ;
+    margin-bottom: 85px;
+    font-family: Arial;
+    font-size: 16px;
+  }
+}
+

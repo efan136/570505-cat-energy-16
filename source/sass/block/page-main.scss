@@ -28,3 +28,9 @@
     font-size: 60px;
   }
 }
+
+@media (min-width: 1300px) {
+  .page-main__heading-wrapper {
+    padding: 76px 110px 0;
+  }
+}
