@@ -1,5 +1,7 @@
 .programms__wrapper {
+  width: 280px;
   padding: 0 20px;
+  margin: 0 auto;
 }
 
 .programms__list {
@@ -52,12 +54,14 @@
 }
 
 @media (min-width: 768px) {
-   .programms {
+  .programms {
     margin-bottom: 40px;
   }
 
   .programms__wrapper {
+    width: 708px;
     padding: 0 30px;
+    margin: 0 auto;
   }
 
   .programms__item {
@@ -94,7 +98,9 @@
   }
 
   .programms__wrapper {
+    width: 1220px;
     padding: 0 110px;
+    margin: 0 auto;
   }
 
   .programms__list {

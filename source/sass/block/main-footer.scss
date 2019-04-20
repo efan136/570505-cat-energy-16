@@ -3,6 +3,8 @@
 }
 
 .main-footer__wrapper {
+  width: 280px;
+  margin: 0 auto;
   padding: 0 20px;
 }
 
@@ -20,6 +22,8 @@
 
 @media (min-width: 768px) {
   .main-footer__wrapper {
+    width: 708px;
+    margin: 0 auto;
     padding: 58px 30px;
     display: flex;
   }
@@ -41,7 +45,9 @@
 
 @media (min-width: 1220px) {
   .main-footer__wrapper {
-    padding: 58px 110px;
+    width: 1220px;
+    padding: 50px 110px;
+    margin: 0 auto;
   }
 
   .main-footer___logo {

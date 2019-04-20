@@ -1,6 +1,21 @@
+.main-nav {
+  width: 320px;
+  margin: 0 auto;
+}
 
 @media (min-width:768px) {
   .main-nav__menu-btn {
     display: none;
+  }
+
+  .main-nav {
+    width: 480px;
+    margin: 0;
+  }
 }
+
+@media (min-width: 1440px) {
+  .main-nav {
+    width: 570px;
+  }
 }

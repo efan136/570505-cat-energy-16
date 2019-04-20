@@ -3,7 +3,9 @@
 }
 
 .extra__wrapper {
+  width: 280px;
   padding: 0 20px;
+  margin: 0 auto;
 }
 
 .extra__heading {
@@ -88,7 +90,9 @@
   }
 
   .extra__wrapper {
+    width: 708px;
     padding: 0 30px;
+    margin: 0 auto;
   }
 
   .extra__heading {
@@ -160,12 +164,13 @@
   }
 }
 
-@media (min-width: 1300px) {
+@media (min-width: 1440px) {
   .extra {
     margin-top: -40px;
   }
 
   .extra__wrapper {
+    width: 1220px;
     padding: 0 110px;
   }
 
@@ -210,7 +215,7 @@
     width: 245px;
   }
 
-   .extra__promo {
+  .extra__promo {
     width: 159px;
     padding: 190px 43px 43px;
     background: url("../img/gift-photo-desktop@1x.jpg") no-repeat 0 0;
@@ -221,5 +226,3 @@
     text-align: center;
   }
 }
-
-

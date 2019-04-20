@@ -3,7 +3,9 @@
 }
 
 .how-work__wrapper {
+  width: 280px;
   padding: 0 20px;
+  margin: 0 auto;
 }
 
 .how-work__heading {
@@ -38,11 +40,13 @@
     border-bottom: 1px solid #e6e6e6;
   }
   .how-work__wrapper {
+    width: 708px;
+    margin: 0 auto;
     padding: 0 30px 0 30px;
   }
 
   .how-work__heading {
-    margin-bottom: 35px;
+    margin-bottom: 70px;
     font-size: 60px;
     line-height: 60px;
   }
@@ -54,21 +58,27 @@
 
   .how-work__item {
     width: 245px;
-    padding: 150px 0 95px;
+    padding: 114px 0 43px;
     min-height: 50px;
     margin-right: 138px;
-    margin-bottom: 0;
+    margin-bottom: 87px;
     font-size: 16px;
     line-height: 24px;
     &:nth-child(2n) {
       margin-right: 0;
     }
+
+    &:last-child {
+    margin-bottom: 87px;
+  }
   }
 }
 
 @media (min-width:1220px) {
   .how-work__wrapper {
+    width: 1220px;
     padding: 0 110px 0 110px;
+    margin: 0 auto;
   }
 
   .how-work__heading {
@@ -89,4 +99,3 @@
     }
   }
 }
-

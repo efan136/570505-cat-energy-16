@@ -1,6 +1,9 @@
+.main-catalog__wrapper {
+  width: 320px;
+  margin: 0 auto;
+}
 
 .main-catalog__box {
-  margin: 0 auto;
   padding: 0 20px;
 }
 
@@ -69,6 +72,7 @@
 
 @media (min-width:768px) {
   .main-catalog__wrapper {
+    width: 708px;
     padding: 0 30px;
   }
 
@@ -125,7 +129,7 @@
   }
 
   .main-catalog__description-table {
-    margin-bottom: 35px;
+    margin-bottom: 28px;
   }
 
   .main-catalog__value {
@@ -140,8 +144,9 @@
   }
 }
 
-@media (min-width: 1300px) {
+@media (min-width: 1440px) {
   .main-catalog__wrapper {
+    width: 1220px;
     padding: 0 110px;
   }
 

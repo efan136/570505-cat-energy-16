@@ -3,6 +3,8 @@
 }
 
 .example__wrapper {
+  width: 280px;
+  margin: 0 auto;
   padding: 20px 20px 30px;
 }
 
@@ -106,17 +108,21 @@
 
 @media (min-width: 768px) {
   .example {
-    background: #ffffff;
+    margin-top: -30px;
+    background-color: #ffffff;
+    background-image: linear-gradient(transparent 50%, #f2f2f2 50%);
   }
 
   .example__heading {
-    padding: 48px 30px 58px;
+    padding: 48px 0 58px;
     margin-bottom: 0;
     background-color: #ffffff;
   }
 
   .example__wrapper {
-    padding: 0;
+    width: 708px;
+    mardin: 0 auto;
+    padding: 0 30px;
   }
 
   .example__story {
@@ -129,8 +135,7 @@
   }
 
   .example__columns {
-    padding: 0 30px 54px;
-    background: linear-gradient(to top, #eaeaea, 50%, #ffffff 50%);
+    padding: 0 0 54px;
   }
 
   .example__description {
@@ -196,12 +201,19 @@
 
 @media (min-width: 1220px) {
   .example {
-    background-color: #f2f2f2;
+    margin-top: 0;
+    background-image: linear-gradient(transparent 20%, #f2f2f2 20%);
+  }
+
+  .example__wrapper {
+    width: 1220px;
+    padding: 0 110px 0 110px;
+    margin: 0 auto;
   }
 
   .example__heading {
-    padding: 85px 110px 68px;
-    margin-bottom: 0;
+    padding: 0px;
+    margin-bottom: 69px;
     background-color: #ffffff;
   }
 
@@ -210,8 +222,7 @@
   }
 
   .example__columns {
-    padding: 0 110px;
-    background: #eaeaea;
+    padding: 0;
   }
 
   .example__story {
@@ -260,5 +271,10 @@
 
   .example_range-wrapper {
     margin-top: auto;
+    margin-left: auto;
+  }
+
+  .example__results {
+    padding: 369px 0 70px 70px;
   }
 }
