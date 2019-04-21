@@ -19,7 +19,7 @@
   display: block;
   width: 140px;
   margin: 0;
-  font-family: "Arial";
+  font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
@@ -70,7 +70,7 @@
   }
 }
 
-@media (min-width: 1220px) {
+@media (min-width: 1440px) {
   .contacts {
     position: relative;
   }

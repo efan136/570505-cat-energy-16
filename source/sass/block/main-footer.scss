@@ -31,11 +31,13 @@
   .main-footer___logo {
     height: 24px;
     margin-right: 151px;
+    border: none;
   }
 
   .footer__list {
     width: 124px;
     margin-right: 138px;
+    border: none;
   }
 
   .footer__copyright {
@@ -43,7 +45,7 @@
   }
 }
 
-@media (min-width: 1220px) {
+@media (min-width: 1440px) {
   .main-footer__wrapper {
     width: 1220px;
     padding: 50px 110px;

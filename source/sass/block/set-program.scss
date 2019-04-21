@@ -1,5 +1,4 @@
 .set-program {
-  background: url("../img/index-can-mobile@1x.png")  no-repeat center bottom 58px, url("../img/index-background-mobile@1x.jpg") no-repeat center 0;
   margin-bottom: 22px;
 }
 
@@ -7,6 +6,7 @@
   width: 280px;
   padding: 29px 20px 0;
   margin: 0 auto;
+  background: url("../img/index-can-mobile@1x.png")  no-repeat center bottom 58px, url("../img/index-background-mobile@1x.jpg") no-repeat center 0;
 }
 
 .set-program__heading {
@@ -32,14 +32,14 @@
 
 @media (min-width: 768px) {
   .set-program {
-    background: url("../img/index-can-tablet@1x.jpg")  no-repeat center bottom;
     min-height: 869px;
     margin-bottom: 0;
   }
 
   .set-program__wrapper {
     width: 427px;
-    padding: 60px 222px 0 120px;
+    padding: 60px 222px 555px 120px;
+    background: url("../img/index-can-tablet@1x.jpg")  no-repeat center bottom;
   }
 
   .set-program__heading {
@@ -69,17 +69,17 @@
   }
 }
 
-@media (min-width: 1220px) {
+@media (min-width: 1440px) {
   .set-program {
-    background: url("../img/index-can-desktop@1x.png")  no-repeat 600px 30px;
     min-height: 583px;
     margin-bottom: 80px;
   }
 
   .set-program__wrapper {
-    width: 488px;
+    width: 489px;
     margin: 0 auto;
-    padding: 110px 760px 0 191px;
+    padding: 110px 760px 190px 191px;
+    background: url("../img/index-can-desktop@1x.png")  no-repeat 558px 30px, url("../img/index-background-desktop@1x.jpg")  no-repeat right top -165px;
   }
 
   .set-program__heading {
