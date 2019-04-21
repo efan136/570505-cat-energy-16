@@ -32,14 +32,16 @@
 
 @media (min-width: 768px) {
   .set-program {
-    background: url("../img/index-can-tablet@1x.jpg")  no-repeat center bottom ;
+    background: url("../img/index-can-tablet@1x.jpg")  no-repeat center bottom;
     min-height: 869px;
     margin-bottom: 0;
   }
+
   .set-program__wrapper {
     width: 427px;
     padding: 60px 222px 0 120px;
   }
+
   .set-program__heading {
     width: 485px;
     margin-bottom: 40px;
@@ -56,7 +58,7 @@
     line-height: 20px;
     text-align: left;
     color: #111111;
-}
+  }
 
   .set-program__link {
     display: inline-block;

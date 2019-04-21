@@ -9,7 +9,7 @@
 }
 
 .how-work__heading {
-  margin:0 0 23px 0;
+  margin: 0 0 23px 0;
   font-size: 36px;
   line-height: 60px;
   font-weight: 400;
@@ -22,7 +22,7 @@
 
 .how-work__item {
   padding-left: 81px;
-  font-family: Arial;
+  font-family: "Arial";
   margin-bottom: 22px;
   font-size: 14px;
   line-height: 20px;
@@ -39,6 +39,7 @@
     margin-bottom: 0;
     border-bottom: 1px solid #e6e6e6;
   }
+
   .how-work__wrapper {
     width: 708px;
     margin: 0 auto;
@@ -64,13 +65,14 @@
     margin-bottom: 87px;
     font-size: 16px;
     line-height: 24px;
+
     &:nth-child(2n) {
       margin-right: 0;
     }
 
     &:last-child {
-    margin-bottom: 87px;
-  }
+      margin-bottom: 87px;
+    }
   }
 }
 
@@ -84,7 +86,7 @@
   .how-work__heading {
     margin-bottom: 70px;
     font-size: 55px;
-    font-weight:400;
+    font-weight: 400;
   }
 
   .how-work__item {
@@ -94,6 +96,7 @@
     &:nth-child(2n) {
       margin-right: 80px;
     }
+
     &:nth-child(4n) {
       margin-right: 0;
     }

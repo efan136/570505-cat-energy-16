@@ -40,7 +40,7 @@
 
 .main-catalog__description-table {
   width: 100%;
-  font-family: Arial;
+  font-family: "Arial";
 }
 
 .main-catalog__value {
@@ -70,7 +70,7 @@
   line-height: 20px;
 }
 
-@media (min-width:768px) {
+@media (min-width: 768px) {
   .main-catalog__wrapper {
     width: 708px;
     padding: 0 30px;
@@ -87,17 +87,18 @@
     margin-bottom: 140px;
     padding-bottom: 0;
     text-align: center;
+
     &:nth-child(2n) {
-    margin-right: 0;
+      margin-right: 0;
     }
   }
 
   .main-catalog__img-link {
-  display: inline-block;
-  text-align: center;
-  width: 195px;
-  height: 208px;
-  margin-top: -80px;
+    display: inline-block;
+    text-align: center;
+    width: 195px;
+    height: 208px;
+    margin-top: -80px;
   }
 
   .main-catalog__box {
@@ -140,7 +141,6 @@
     padding: 8px 0;
     font-size: 16px;
     text-align: left;
-
   }
 }
 
