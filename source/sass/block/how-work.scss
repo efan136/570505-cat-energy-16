@@ -22,7 +22,7 @@
 
 .how-work__item {
   padding-left: 81px;
-  font-family: "Arial";
+  font-family: "Arial", sans-serif ;
   margin-bottom: 22px;
   font-size: 14px;
   line-height: 20px;
@@ -34,7 +34,7 @@
   }
 }
 
-@media (min-width:768px) {
+@media (min-width: 768px) {
   .how-work {
     margin-bottom: 0;
     border-bottom: 1px solid #e6e6e6;
@@ -76,7 +76,7 @@
   }
 }
 
-@media (min-width:1220px) {
+@media (min-width: 1220px) {
   .how-work__wrapper {
     width: 1220px;
     padding: 0 110px 0 110px;
