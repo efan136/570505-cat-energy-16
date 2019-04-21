@@ -191,12 +191,12 @@
   }
 
   .example__image {
-    width:464px;
+    width: 464px;
     height: 499px;
   }
 }
 
-@media (min-width: 1220px) {
+@media (min-width: 1440px) {
   .example {
     margin-top: 0;
     background-image: linear-gradient(transparent 20%, #f2f2f2 20%);
@@ -209,7 +209,7 @@
   }
 
   .example__heading {
-    padding: 0px;
+    padding: 0;
     margin-bottom: 69px;
     background-color: #ffffff;
   }
@@ -220,6 +220,8 @@
 
   .example__columns {
     padding: 0;
+    display: flex;
+    justify-content: space-between;
   }
 
   .example__story {
@@ -257,21 +259,12 @@
     background-color: #eaeaea;
   }
 
-  .example__columns {
-    display: flex;
-    justify-content: space-between;
-  }
-
   .example__results {
-    padding-bottom: 60px;
+    padding: 369px 0 70px 70px;
   }
 
   .example_range-wrapper {
     margin-top: auto;
     margin-left: auto;
-  }
-
-  .example__results {
-    padding: 369px 0 70px 70px;
   }
 }

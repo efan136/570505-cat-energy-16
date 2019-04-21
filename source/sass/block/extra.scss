@@ -36,7 +36,7 @@
   display: flex;
   justify-content: space-between;
   margin: 0 0 16px;
-  font-family: Arial;
+  font-family: "Arial";
 }
 
 .extra__parametr {
@@ -72,7 +72,7 @@
 
 .extra__promo-text {
   margin: 0;
-  font-family: Arial;
+  font-family: "Arial";
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
@@ -118,11 +118,13 @@
   .extra__item-column {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 27px;
   }
 
   .extra__title {
     font-size: 20px;
     line-height: 20px;
+    margin: 0;
   }
 
   .extra__description {
@@ -144,23 +146,14 @@
     line-height: 20px;
   }
 
-  .extra__title {
-    margin:0;
-  }
-
-  .extra__item-column {
-    margin-bottom: 27px;
-  }
-
   .extra__promo {
     padding: 73px 123px 67px 424px;
     background: url("../img/gift-photo-tablet@1x.jpg") no-repeat 0 0;
     background-size: cover;
   }
 
-
   .extra__promo-text {
-  text-align: left;
+    text-align: left;
   }
 }
 
@@ -192,6 +185,8 @@
 
   .extra__item-column {
     width: 610px;
+    align-items: center;
+    margin: 0;
   }
 
   .extra__title {
@@ -200,11 +195,6 @@
 
   .extra__description {
     width: 285px;
-  }
-
-  .extra__item-column {
-    align-items: center;
-    margin: 0;
   }
 
   .extra__parametr {
