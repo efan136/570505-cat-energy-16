@@ -1,6 +1,9 @@
+.main-catalog__wrapper {
+  width: 320px;
+  margin: 0 auto;
+}
 
 .main-catalog__box {
-  margin: 0 auto;
   padding: 0 20px;
 }
 
@@ -10,9 +13,38 @@
 
 
 .main-catalog__item {
-  padding-top: 22px;
   padding-bottom: 24px;
   border-bottom: 1px solid #ededed;
+}
+
+.main-catalog__box-wrapper {
+  display: flex;
+}
+
+.main-catalog__item-wrapper {
+  width: 140px;
+  padding-top: 20px;
+}
+
+.main-catalog__img-link {
+  width: 140px;
+  height: 144px;
+}
+
+.main-catalog__title-link {
+  display: block;
+  width: 80px;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+.main-catalog__description-table {
+  width: 100%;
+  font-family: "Arial", sans-serif;
+}
+
+.main-catalog__value {
+  text-align: right;
 }
 
 .main-catalog__title {
@@ -24,12 +56,9 @@
   text-transform: uppercase;
 }
 
-.main-catalog__title-link {
-  text-decoration: none;
-}
-
 .main-catalog__parametr,
 .main-catalog__value {
+  padding: 0;
   font-size: 12px;
   line-height: 16px;
   font-weight: 400;
@@ -39,4 +68,105 @@
 .main-catalog__link {
   font-size: 16px;
   line-height: 20px;
+}
+
+@media (min-width: 768px) {
+  .main-catalog__wrapper {
+    width: 708px;
+    padding: 0 30px;
+  }
+
+  .main-catalog__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .main-catalog__item {
+    background-color: #f2f2f2;
+    margin-right: 58px;
+    margin-bottom: 140px;
+    padding-bottom: 0;
+    text-align: center;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+
+  .main-catalog__img-link {
+    display: inline-block;
+    text-align: center;
+    width: 195px;
+    height: 208px;
+    margin-top: -80px;
+  }
+
+  .main-catalog__box {
+    width: 249px;
+    padding: 0 38px 40px;
+  }
+
+  .main-catalog__box-wrapper {
+    display: block;
+  }
+
+  .main-catalog__item-wrapper {
+    width: 100%;
+    padding-top: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-catalog__title-link {
+    width: 140px;
+    margin-bottom: 18px;
+  }
+
+  .main-catalog__title {
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+  }
+
+  .main-catalog__description-table {
+    margin-bottom: 28px;
+  }
+
+  .main-catalog__value {
+    font-size: 16px;
+  }
+
+  .main-catalog__parametr {
+    padding: 8px 0;
+    font-size: 16px;
+    text-align: left;
+  }
+}
+
+@media (min-width: 1440px) {
+  .main-catalog__wrapper {
+    width: 1220px;
+    padding: 0 110px;
+  }
+
+  .main-catalog__box {
+    width: 169px;
+  }
+
+  .main-catalog__img-link {
+    width: 100%;
+  }
+
+  .main-catalog__item {
+    margin-right: 80px;
+
+    &:nth-child(2n) {
+      margin-right: 80px;
+    }
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+  }
 }

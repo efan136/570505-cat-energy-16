@@ -3,7 +3,9 @@
 }
 
 .extra__wrapper {
+  width: 280px;
   padding: 0 20px;
+  margin: 0 auto;
 }
 
 .extra__heading {
@@ -22,7 +24,7 @@
 }
 
 .extra__title {
-  margin: 0 0 15px;
+  margin: 0 0 14px;
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
@@ -31,7 +33,10 @@
 }
 
 .extra__description {
-  margin: 0 0 14px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 16px;
+  font-family: "Arial", sans-serif;
 }
 
 .extra__parametr {
@@ -52,7 +57,7 @@
 }
 
 .extra__item {
-  padding-top: 35px;
+  padding-top: 13px;
   padding-bottom: 17px;
   border-bottom: 1px solid #ededed;
 }
@@ -67,9 +72,147 @@
 
 .extra__promo-text {
   margin: 0;
+  font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
   color: #ffffff;
   text-align: center;
+}
+
+@media (min-width: 768px) {
+  .extra {
+    margin-top: -53px;
+    margin-bottom: 76px;
+    padding-top: 0;
+    padding-bottom: 0;
+    border-top: 3px solid #68b738;
+  }
+
+  .extra__wrapper {
+    width: 708px;
+    padding: 0 30px;
+    margin: 0 auto;
+  }
+
+  .extra__heading {
+    display: inline-block;
+    padding: 0 34px 0;
+    margin-bottom: 81px;
+    margin-top: -27px;
+    background-color: #ffffff;
+    font-size: 36px;
+    line-height: 36px;
+    vertical-align: middle;
+  }
+
+  .extra__list {
+    border: 1px solid #d9d9d9;
+    margin-bottom: 69px;
+  }
+
+  .extra__item {
+    padding: 27px 37px;
+  }
+
+  .extra__item-column {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 27px;
+  }
+
+  .extra__title {
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0;
+  }
+
+  .extra__description {
+    margin-bottom: 0;
+  }
+
+  .extra__parametr {
+    width: 192px;
+    margin-right: 15px;
+    text-align: right;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .extra__value {
+    width: 80px;
+    text-align: right;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .extra__promo {
+    padding: 73px 123px 67px 424px;
+    background: url("../img/gift-photo-tablet@1x.jpg") no-repeat 0 0;
+    background-size: cover;
+  }
+
+  .extra__promo-text {
+    text-align: left;
+  }
+}
+
+@media (min-width: 1440px) {
+  .extra {
+    margin-top: -40px;
+  }
+
+  .extra__wrapper {
+    width: 1220px;
+    padding: 0 110px;
+  }
+
+  .extra__columns {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .extra__list {
+    margin-bottom: 0;
+  }
+
+  .extra__item {
+    display: flex;
+    justify-content: space-between;
+    width: 895px;
+    padding: 16px 0;
+  }
+
+  .extra__item-column {
+    width: 610px;
+    align-items: center;
+    margin: 0;
+  }
+
+  .extra__title {
+    width: 285px;
+  }
+
+  .extra__description {
+    width: 285px;
+  }
+
+  .extra__parametr {
+    text-align: left;
+  }
+
+  .extra__link {
+    width: 245px;
+  }
+
+  .extra__promo {
+    width: 159px;
+    padding: 190px 43px 43px;
+    background: url("../img/gift-photo-desktop@1x.jpg") no-repeat 0 0;
+    background-size: cover;
+  }
+
+  .extra__promo-text {
+    text-align: center;
+  }
 }

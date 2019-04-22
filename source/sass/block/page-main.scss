@@ -1,5 +1,7 @@
 .page-main__heading-wrapper {
-  padding: 20px;
+  width: 280px;
+  padding: 22px 20px;
+  margin: 0 auto;
   border-bottom: 1px solid #ededed;
 }
 
@@ -17,4 +19,27 @@
   line-height: 18px;
   font-weight: 400;
   color: #111111;
+}
+
+@media (min-width: 768px) {
+  .page-main__heading-wrapper {
+    width: 708px;
+    margin: 0 auto;
+    padding: 56px 30px 10px;
+  }
+
+  .page-catalog .page-main__heading-wrapper {
+    margin-bottom: 156px;
+  }
+
+  .page-main__heading {
+    font-size: 60px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .page-main__heading-wrapper {
+    width: 1220px;
+    padding: 76px 110px 0;
+  }
 }

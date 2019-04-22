@@ -3,16 +3,81 @@
 }
 
 .main-header__wrapper {
+  width: 280px;
   padding: 0 20px;
+  margin: 0 auto;
 }
 
 .main-header__top {
-  height: 65px;
   border-bottom: 1px solid #e6e6e6;
 }
 
 .main-header__logo {
   display: block;
-  padding-top: 18px;
-  padding-bottom: 16px;
+  width: 191px;
+  height: 38px;
+  padding-top: 12px;
+  padding-bottom: 15px;
+}
+
+@media (min-width: 768px) {
+  .main-header {
+    min-height: 59px;
+    border: none;
+  }
+
+  .main-header__column {
+    display: flex;
+    justify-content: space-between;
+    width: 708px;
+    padding: 24px 30px 0;
+    margin: 0 auto;
+  }
+
+  .main-header__top {
+    border: none;
+  }
+
+  .main-header__wrapper {
+    width: 174px;
+    padding: 0;
+  }
+
+  .main-header__logo {
+    height: 58px;
+    width: 174px;
+    padding: 0;
+  }
+}
+
+@media (min-width: 1440px) {
+  .main-header__column {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 1220px;
+    padding: 53px 110px 0;
+    margin: 0 auto;
+    z-index: 100;
+  }
+
+  .main-header__column::after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    width: 879px;
+    min-height: 696px;
+    background: url("../img/index-can-desktop@1x.png") no-repeat 0 142px, url("../img/index-background-desktop@1x.jpg") no-repeat right top;
+  }
+
+  .main-header__wrapper {
+    width: 203px;
+  }
+
+  .main-header__logo {
+    height: 59px;
+    width: 203px;
+  }
 }

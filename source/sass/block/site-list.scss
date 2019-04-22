@@ -25,3 +25,50 @@
     color: rgba(17, 17, 17, 0.3);
   }
 }
+
+@media (min-width: 768px) {
+  .site-list {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    width: 480px;
+    padding-top: 10px;
+  }
+
+  .site-list__item {
+    margin-left: 25px;
+    padding: 6px 0;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
+  .site-list__link {
+    padding: 0;
+    font-size: 18px;
+    line-height: 25px;
+    color: #222222;
+    font-weight: 400;
+    border: none;
+  }
+}
+
+@media (min-width: 1440px) {
+  .site-list {
+    width: 570px;
+    justify-content: flex-end;
+    padding-top: 15px;
+  }
+
+  .site-list__item {
+    margin-left: 32px;
+    padding: 6px 0;
+  }
+
+  .site-list__link {
+    font-size: 19px;
+    color: #ffffff;
+    font-weight: 400;
+  }
+}

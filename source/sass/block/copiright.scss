@@ -1,5 +1,6 @@
 
 .copiright {
+  font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
@@ -8,5 +9,11 @@
 
   &:active {
     color: rgba(68, 68, 68, 0.3);
+  }
+}
+
+@media (min-width: 768px) {
+  .copiright {
+    width: 165px;
   }
 }
