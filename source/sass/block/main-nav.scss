@@ -27,6 +27,38 @@
   box-shadow: 0 8px 0 0 #222222, 0 16px 0 0;
 }
 
+.main-nav--opened .main-nav__menu-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 25px;
+  height: 2px;
+  background-color: #222222;
+  transform: rotate(45deg);
+}
+
+.main-nav--opened .main-nav__menu-btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 25px;
+  height: 2px;
+  background-color: #222222;
+  transform: rotate(-45deg);
+}
+
+@media (max-width: 767px) {
+  .main-nav--closed .site-list {
+    display: none;
+  }
+
+  .main-nav--nojs .site-list{
+    display: block;
+  }
+}
+
 @media (min-width: 768px) {
   .main-nav__menu-btn {
     display: none;
