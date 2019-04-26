@@ -32,7 +32,6 @@
 .programms__item::after {
   content: "";
   position: absolute;
-
 }
 
 .programms__item--loose::after {
@@ -63,7 +62,7 @@
 
 .programms__description {
   margin: 0 0 20px 0;
-  padding-bottom: 20px;
+  padding-bottom: 24px;
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
@@ -87,17 +86,16 @@
     opacity: 0.3;
   }
 
-  &:hover:after,
-  &:focus:after{
+  &:hover::after,
+  &:focus::after {
     width: 33px;
     height: 12px;
     background: url("../img/icon-right-arrow-verylong.svg") 0 0 no-repeat;
   }
 
-  &:active:after {
+  &:active::after {
     opacity: 0.3;
   }
-
 }
 
 .programms__link::after {
@@ -147,7 +145,7 @@
     left: 412px;
     width: 268px;
     height: 113px;
-    background: url("../img/icon-cat-pro.svg") 0 0 no-repeat
+    background: url("../img/icon-cat-pro.svg") 0 0 no-repeat;
   }
 
   .programms__heading {
@@ -224,7 +222,7 @@
     left: 34px;
     width: 134px;
     height: 57px;
-    background: url("../img/icon-cat-pro.svg") 0 0 no-repeat
+    background: url("../img/icon-cat-pro.svg") 0 0 no-repeat;
   }
 
   .programms__heading {

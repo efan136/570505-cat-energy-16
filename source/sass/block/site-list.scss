@@ -70,13 +70,17 @@
     padding: 6px 0;
   }
 
-  .site-list__item--current {
+  .index-page .site-list__item--current {
     border-bottom: 2px solid #ffffff;
   }
 
   .site-list__link {
     font-size: 19px;
-    color: #ffffff;
+
     font-weight: 400;
+  }
+
+  .index-page .site-list__link {
+    color: #ffffff;
   }
 }

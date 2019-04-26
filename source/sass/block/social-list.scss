@@ -19,7 +19,7 @@
 
   &:hover,
   &:focus {
-  fill: #68b738;
+    fill: #68b738;
   }
 
   &:active {
@@ -32,19 +32,19 @@
     padding-top: 0;
     height: 28px;
   }
+
   .social-list__link--vk {
     width: 30px;
     height: 16px;
   }
 
-    .social-list__link--insta {
+  .social-list__link--insta {
     width: 23px;
     height: 23px;
   }
 
-    .social-list__link--fb {
+  .social-list__link--fb {
     width: 14px;
     height: 28px;
   }
-
 }
