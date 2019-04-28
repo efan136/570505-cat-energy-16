@@ -61,6 +61,28 @@
   background: url("../img/advantage-clock@1x.png") center center no-repeat #68b738;
 }
 
+@media ( min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .how-work__item--helthy::before {
+    background-image: url("../img/advantage-leaf@2x.png"), #68b738;
+    background-size: 50px 50px;
+  }
+
+  .how-work__item--consistence::before {
+    background: url("../img/advantage-powder@2x.png"), #68b738;
+    background-size: 50px 50px;
+  }
+
+  .how-work__item--use::before {
+    background: url("../img/advantage-dining@2x.png"), #68b738;
+    background-size: 50px 50px;
+  }
+
+  .how-work__item--time::before {
+    background: url("../img/advantage-clock@2x.png"), #68b738;
+    background-size: 50px 50px;
+  }
+}
+
 @media (min-width: 768px) {
   .how-work {
     margin-bottom: 0;
