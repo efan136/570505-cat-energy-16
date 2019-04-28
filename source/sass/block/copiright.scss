@@ -1,5 +1,8 @@
 
 .copiright {
+  padding: 22px 0;
+  display: flex;
+  justify-content: space-between;
   font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 16px;
@@ -7,13 +10,24 @@
   color: #444444;
   text-decoration: none;
 
-  &:active {
-    color: rgba(68, 68, 68, 0.3);
+  &:hover path,
+  &:focus path {
+    fill: #68b738;
   }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.copyright__text {
+  margin: 0;
+  padding-top: 10px;
 }
 
 @media (min-width: 768px) {
   .copiright {
     width: 165px;
+    padding: 0;
   }
 }

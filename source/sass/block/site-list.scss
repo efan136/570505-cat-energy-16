@@ -44,6 +44,10 @@
     }
   }
 
+  .site-list__item--current {
+    border-bottom: 2px solid #68b738;
+  }
+
   .site-list__link {
     padding: 0;
     font-size: 18px;
@@ -66,9 +70,17 @@
     padding: 6px 0;
   }
 
+  .index-page .site-list__item--current {
+    border-bottom: 2px solid #ffffff;
+  }
+
   .site-list__link {
     font-size: 19px;
-    color: #ffffff;
+
     font-weight: 400;
+  }
+
+  .index-page .site-list__link {
+    color: #ffffff;
   }
 }
