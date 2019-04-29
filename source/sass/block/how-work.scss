@@ -61,7 +61,7 @@
   background: url("../img/advantage-clock@1x.png") center center no-repeat #68b738;
 }
 
-@media ( min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .how-work__item--helthy::before {
     background: url("../img/advantage-leaf@2x.png") center center no-repeat, #68b738;
     background-size: 50px 50px;

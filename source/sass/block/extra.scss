@@ -165,8 +165,8 @@
     .extra__promo {
       background: url("../img/gift-photo-tablet@2x.jpg");
       background-size: cover;
+    }
   }
-}
 
   .extra__promo-text {
     text-align: left;
@@ -229,12 +229,12 @@
     background-size: cover;
   }
 
-    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .extra__promo {
       background: url("../img/gift-photo-tablet@2x.jpg");
       background-size: cover;
+    }
   }
-}
 
   .extra__promo-text {
     text-align: center;
