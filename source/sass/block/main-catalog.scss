@@ -105,6 +105,14 @@
     margin-top: -46px;
   }
 
+  .main-catalog__img-link--small img {
+    max-width: 324px;
+  }
+
+  .main-catalog__img-link--big img {
+    max-width: 324px;
+  }
+
   .main-catalog__img-link--big {
     width: 195px;
     height: 208px;
@@ -170,6 +178,14 @@
 
   .main-catalog__img-link {
     width: 100%;
+  }
+
+  .main-catalog__img-link--small img {
+    max-width: 245px;
+  }
+
+  .main-catalog__img-link--big img {
+    max-width: 245px;
   }
 
   .main-catalog__item {

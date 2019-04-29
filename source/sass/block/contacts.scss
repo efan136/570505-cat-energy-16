@@ -36,6 +36,13 @@
   border: none;
 }
 
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .contacts__map {
+    background-image: url("../img/bg-map-mobile@2x.png");
+    background-size: cover;
+  }
+}
+
 @media (min-width: 768px) {
   .contacts {
     background-color: #ffffff;
@@ -67,6 +74,15 @@
 
   .contacts__map {
     height: 400px;
+    background-image: url("../img/bg-map-tablet@1x.png");
+    background-size: cover;
+  }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .contacts__map {
+      background-image: url("../img/bg-map-tablet@2x.png");
+      background-size: cover;
+    }
   }
 }
 
@@ -90,5 +106,17 @@
 
   .contacts__adress {
     width: 169px;
+  }
+
+  .contacts__map {
+    background-image: url("../img/bg-map-desktop@1x.png");
+    background-size: cover;
+  }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .contacts__map {
+      background-image: url("../img/bg-map-desktop@2x.png");
+      background-size: cover;
+    }
   }
 }
