@@ -9,9 +9,10 @@
   font-weight: 400;
   color: #444444;
   text-decoration: none;
+  fill: #666666;
 
-  &:hover path,
-  &:focus path {
+  &:hover,
+  &:focus {
     fill: #68b738;
   }
 
