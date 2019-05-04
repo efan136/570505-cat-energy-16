@@ -63,12 +63,23 @@
 }
 
 .extra__promo {
+  position: relative;
   padding-top: 187px;
   padding-left: 40px;
   padding-right: 40px;
   padding-bottom: 40px;
   background: url("../img/gift-photo-mobile@1x.jpg") no-repeat 0 0;
   background-size: cover;
+}
+
+.extra__promo::before {
+  content: "";
+  position: absolute;
+  top: 65px;
+  left: 113px;
+  width: 56px;
+  height: 61px;
+  background: url("../img/icon-gift.svg") 0 0 no-repeat;
 }
 
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
@@ -159,6 +170,11 @@
     padding: 73px 123px 67px 424px;
     background: url("../img/gift-photo-tablet@1x.jpg") no-repeat 0 0;
     background-size: cover;
+  }
+
+  .extra__promo::before {
+    top: 62px;
+    left: 90px;
   }
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
