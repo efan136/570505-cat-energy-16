@@ -9,10 +9,9 @@
 }
 
 .main-footer___logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 94px;
+  display: block;
+  padding: 39px 0 30px 78px;
+  height: 24px;
   border-bottom: 1px solid #d9d9d9;
 }
 
@@ -24,13 +23,14 @@
   .main-footer__wrapper {
     width: 708px;
     margin: 0 auto;
-    padding: 58px 30px;
+    padding: 50px 30px;
     display: flex;
   }
 
   .main-footer___logo {
     height: 24px;
     margin-right: 77px;
+    padding: 0;
     border: none;
   }
 
@@ -48,7 +48,7 @@
 @media (min-width: 1440px) {
   .main-footer__wrapper {
     width: 1220px;
-    padding: 50px 110px;
+    padding: 60px 110px;
     margin: 0 auto;
   }
 

@@ -1,23 +1,32 @@
 .page-main__heading-wrapper {
   width: 280px;
-  padding: 22px 20px;
+  padding: 16px 20px;
   margin: 0 auto;
   border-bottom: 1px solid #ededed;
 }
 
+.form-page .page-main__heading-wrapper {
+  border: none;
+}
+
 .page-main__heading {
-  margin: 0;
+  margin: 0 0 12px 0;
   font-size: 36px;
   line-height: 60px;
   font-weight: 400;
   color: #111111;
 }
 
+.form-page .page-main__heading {
+  margin-bottom: 25px;
+}
+
 .page-main__text {
-  margin: 0;
+  margin: 0 0 24px 0;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
+  text-transform: uppercase;
   color: #111111;
 }
 
@@ -25,16 +34,30 @@
   .page-main__heading-wrapper {
     width: 708px;
     margin: 0 auto;
-    padding: 56px 30px 10px;
+    padding: 58px 30px 8px;
     border: none;
   }
 
   .page-catalog .page-main__heading-wrapper {
-    margin-bottom: 156px;
+    margin-bottom: 145px;
   }
 
   .page-main__heading {
     font-size: 60px;
+  }
+
+  .form-page .page-main__heading {
+    margin-bottom: 56px;
+  }
+
+  .page-main__text {
+    font-size: 20px;
+  }
+
+  .form-page .page-main__text {
+    padding-left: 40px;
+    line-height: 30px;
+    margin-bottom: 57px;
   }
 }
 
@@ -42,5 +65,19 @@
   .page-main__heading-wrapper {
     width: 1220px;
     padding: 76px 110px 0;
+    margin-bottom: 171px;
+  }
+
+  .page-catalog .page-main__heading-wrapper {
+    margin-bottom: 171px;
+  }
+
+  .form-page .page-main__heading-wrapper {
+    margin-bottom: 0;
+  }
+
+  .form-page .page-main__text {
+    padding-left: 0;
+    margin-bottom: 64px;
   }
 }

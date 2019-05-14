@@ -1,5 +1,5 @@
 .extra {
-  padding: 30px 0 35px;
+  padding: 28px 0 35px;
 }
 
 .extra__wrapper {
@@ -9,13 +9,27 @@
 }
 
 .extra__heading {
+  display: inline-block;
+  position: relative;
   margin: 0;
-  padding-bottom: 30px;
+  padding: 0 24px 33px 0;
+  background-color: #ffffff;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
   color: #111111;
   border-bottom: 1px solid #ededed;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 13px;
+    left: 0;
+    z-index: -1;
+    height: 3px;
+    width: 300px;
+    background-color: #68b738;
+  }
 }
 
 .extra__list {
@@ -35,7 +49,7 @@
 .extra__description {
   display: flex;
   justify-content: space-between;
-  margin: 0 0 16px;
+  margin: 0 0 14px;
   font-family: "Arial", sans-serif;
 }
 
@@ -56,18 +70,24 @@
   text-transform: uppercase;
 }
 
+.extra__link {
+  font-size: 16px;
+  line-height: 20px;
+}
+
 .extra__item {
   padding-top: 13px;
-  padding-bottom: 19px;
+  padding-bottom: 17px;
   border-bottom: 1px solid #ededed;
+
+  &:first-child {
+    border-top: 1px solid #ededed;
+  }
 }
 
 .extra__promo {
   position: relative;
-  padding-top: 187px;
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-bottom: 40px;
+  padding: 187px 40px 42px 40px;
   background: url("../img/gift-photo-mobile@1x.jpg") no-repeat 0 0;
   background-size: cover;
 }
@@ -101,11 +121,10 @@
 
 @media (min-width: 768px) {
   .extra {
-    margin-top: -53px;
+    margin-top: -75px;
     margin-bottom: 76px;
     padding-top: 0;
     padding-bottom: 0;
-    border-top: 3px solid #68b738;
   }
 
   .extra__wrapper {
@@ -116,14 +135,20 @@
 
   .extra__heading {
     display: inline-block;
-    padding: 0 34px 0;
-    margin-bottom: 81px;
-    margin-top: -27px;
+    position: relative;
+    padding: 0 37px 0 37px;
+    margin-bottom: 79px;
     background-color: #ffffff;
     font-size: 36px;
     line-height: 36px;
     vertical-align: middle;
     border: none;
+
+    &::before {
+      top: 22px;
+      left: -30px;
+      width: 768px;
+    }
   }
 
   .extra__list {
@@ -138,7 +163,7 @@
   .extra__item-column {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 27px;
+    margin-bottom: 24px;
   }
 
   .extra__title {
@@ -149,6 +174,7 @@
 
   .extra__description {
     margin-bottom: 0;
+    align-items: flex-end;
   }
 
   .extra__parametr {
@@ -156,14 +182,14 @@
     margin-right: 15px;
     text-align: right;
     font-size: 16px;
-    line-height: 20px;
+    line-height: 18px;
   }
 
   .extra__value {
     width: 80px;
     text-align: right;
     font-size: 16px;
-    line-height: 20px;
+    line-height: 18px;
   }
 
   .extra__promo {
@@ -191,12 +217,23 @@
 
 @media (min-width: 1440px) {
   .extra {
-    margin-top: -40px;
+    margin-top: -78px;
+    margin-bottom: 78px;
   }
 
   .extra__wrapper {
     width: 1220px;
     padding: 0 110px;
+  }
+
+  .extra__heading {
+    padding: 0 37px 0 37px;
+    margin: 0 0 82px -40px;
+
+    &::before {
+      left: -70px;
+      width: 1440px;
+    }
   }
 
   .extra__columns {
@@ -239,8 +276,8 @@
   }
 
   .extra__promo {
-    width: 159px;
-    padding: 190px 43px 43px;
+    width: 163px;
+    padding: 188px 40px 20px;
     background: url("../img/gift-photo-desktop@1x.jpg") no-repeat 0 0;
     background-size: cover;
   }

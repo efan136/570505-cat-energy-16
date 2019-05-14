@@ -1,6 +1,6 @@
 .show-all {
   position: relative;
-  padding-top: 82px;
+  padding-top: 80px;
   padding-bottom: 24px;
 }
 
@@ -30,7 +30,7 @@
 }
 
 .show-all__heading {
-  margin: 0 0 10px;
+  margin: 0 0 7px;
   text-align: center;
   font-size: 16px;
   line-height: 20px;
@@ -40,8 +40,9 @@
 }
 
 .show-all__slogan {
-  margin: 0 0 20px;
+  margin: 0 0 22px;
   text-align: center;
+  font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 16px;
   font-weight: 400;
@@ -111,7 +112,7 @@
 @media (min-width: 1440px) {
   .show-all {
     width: 169px;
-    padding-top: 170px;
+    padding-top: 159px;
     background-color: #ffffff;
     border: 1px solid #e7e7e7;
   }
@@ -133,7 +134,7 @@
 
   .show-all__slogan {
     padding: 0;
-    margin-bottom: 85px;
+    margin-bottom: 90px;
     font-family: "Arial", sans-serif;
     font-size: 16px;
   }

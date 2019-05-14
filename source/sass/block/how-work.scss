@@ -1,5 +1,5 @@
 .how-work {
-  margin-bottom: 42px;
+  margin-bottom: 38px;
 }
 
 .how-work__wrapper {
@@ -96,7 +96,7 @@
   }
 
   .how-work__heading {
-    margin-bottom: 70px;
+    margin-bottom: 72px;
     font-size: 60px;
     line-height: 60px;
   }
@@ -148,14 +148,17 @@
 
   .how-work__item--consistence::after {
     content: "2";
+    right: 0;
   }
 
   .how-work__item--use::after {
     content: "3";
+    right: -3px;
   }
 
   .how-work__item--time::after {
     content: "4";
+    right: -4px;
   }
 }
 
@@ -174,7 +177,7 @@
   .how-work__heading {
     margin-bottom: 70px;
     font-size: 55px;
-    font-weight: 400;
+    font-weight: 500;
   }
 
   .how-work__item {

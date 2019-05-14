@@ -12,12 +12,12 @@
   margin: 0 0 20px 0;
   font-size: 36px;
   line-height: 60px;
-  font-weight: 500;
+  font-weight: 400;
   color: #111111;
 }
 
 .example__description {
-  margin: 0 0 25px 0;
+  margin: 0 0 27px 0;
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
@@ -29,7 +29,7 @@
   @include reset ();
   display: flex;
   justify-content: space-between;
-  margin-bottom: 30px;
+  margin-bottom: 33px;
 }
 
 .example__item {
@@ -39,8 +39,8 @@
 .example__value {
   margin: 0;
   width: 122px;
-  padding-top: 17px;
-  padding-bottom: 17px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   text-align: center;
   font-size: 24px;
   line-height: 24px;
@@ -85,21 +85,33 @@
 
 .example_range-wrapper {
   display: flex;
-  min-height: 16px;
   margin: 0 auto;
+  min-height: 16px;
+
 }
 
 .example__range-before {
-  margin: 0;
+  display: inline-block;
+  min-width: 48px;
+  margin: 0 19px 0 0;
+  text-align: right;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
   color: #111111;
   text-transform: uppercase;
+}
+
+.example__range {
+  padding: 0 2px;
+  height: 12px;
+  background-color: #ffffff;
 }
 
 .example__range-after {
-  margin: 0;
+  display: inline-block;
+  min-width: 48px;
+  margin: 0 0 0 18px;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
@@ -107,15 +119,72 @@
   text-transform: uppercase;
 }
 
+input[type=range] {
+  -webkit-appearance: none;
+  width: 77px;
+  height: 12px;
+  background-color: #fffff;
+  border: 1px solid #cdcdcd;
+  border-radius: 6px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+input[type=range]:focus {
+  outline: none;
+}
+
+input[type=range]::-ms-track {
+  width: 84px;
+  cursor: pointer;
+  background: #ffffff;
+  border: 1px solid #cdcdcd;;
+  color: transparent;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 6px;
+  width: 35px;
+  border-radius: 6px;
+  background: #68b738;
+  cursor: pointer;
+}
+
+input[type=range]::-moz-range-thumb {
+  box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.15);
+  height: 34px;
+  width: 34px;
+  border-radius: 6px;
+  background: #68b738;
+  cursor: pointer;
+}
+
+input[type=range]::-ms-thumb {
+  box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.15);
+
+  height: 6px;
+  width: 36px;
+  border-radius: 50%;
+  background: #68b738;
+  cursor: pointer;
+}
+
 @media (min-width: 768px) {
+
+  *{
+  outline: 1px solid red;
+  }
   .example {
-    margin-top: -30px;
+    margin-top: -33px;
     background-color: #ffffff;
     background-image: linear-gradient(transparent 50%, #f2f2f2 50%);
   }
 
   .example__heading {
-    padding: 48px 0 58px;
+    padding: 48px 0 65px;
     margin-bottom: 0;
     background-color: #ffffff;
     font-size: 60px;
@@ -128,22 +197,103 @@
     padding: 0 30px;
   }
 
-  .example__story {
-    margin-bottom: 220px;
+  input[type=range] {
+    -webkit-appearance: none;
+    width: 428px;
+    height: 4px;
+    margin-top: 7px;
+    border-radius: 6px;
+    background-color: #dcdcdc;
   }
 
-  .example__columns {
-    padding: 0 0 54px;
+  input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
   }
+
+  input[type=range]:focus {
+    outline: none;
+  }
+
+  input[type=range]::-ms-track {
+    width: 428px;
+    border-radius: 6px;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+  }
+
+  input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: 13px solid #ffffff;
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    background: #68b738;
+    cursor: pointer;
+
+    box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.15);
+    &:hover {
+      box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.25);
+    }
+
+    &:active {
+      box-shadow: 0px 2px 5px 2px rgba(104, 183, 56, 0.9);
+    }
+  }
+
+  input[type=range]::-moz-range-thumb {
+    box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.15);
+    border: 13px solid #ffffff;
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    background: #68b738;
+    cursor: pointer;
+    &:hover {
+      box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.25);
+    }
+
+    &:active {
+      box-shadow: 0px 2px 5px 2px rgba(104, 183, 56, 0.9);
+    }
+  }
+
+  input[type=range]::-ms-thumb {
+    box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.15);
+    border: 13px solid #ffffff;
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    background: #68b738;
+    cursor: pointer;
+    &:hover {
+      box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.25);
+    }
+
+    &:active {
+      box-shadow: 0px 2px 5px 2px rgba(104, 183, 56, 0.9);
+    }
+  }
+
+    .example__story {
+      margin-bottom: 220px;
+    }
+
+    .example__columns {
+      padding: 0 0 54px;
+    }
 
   .example__description {
-    margin-bottom: 56px;
+    padding-right: 20px;
+    margin-bottom: 52px;
     font-size: 16px;
     line-height: 24px;
   }
 
   .example__value {
-    width: 160px;
+    width: 159px;
+    padding-bottom: 18px;
     font-size: 30px;
     line-height: 37px;
   }
@@ -158,37 +308,49 @@
   }
 
   .example__list {
-    width: 368px;
+    width: 365px;
   }
 
   .example__list-wrapper {
     display: flex;
+    justify-content: space-between;
   }
 
   .example__price {
-    margin-left: auto;
+    width: 200px;
     padding-top: 10px;
     font-size: 20px;
     line-height: 20px;
+    font-weight: 400;
     text-align: right;
   }
 
   .example__price-value {
     display: block;
     padding-top: 10px;
+    font-weight: 500;
   }
 
   .example__results {
-    padding: 369px 70px 0;
+    padding: 369px 0 0;
   }
 
   .example_range-wrapper {
-    width: 570px;
     min-height: 40px;
   }
 
-  .example__range {
-    flex-grow: 1;
+  .example__range-before {
+    min-width: 48px;
+    font-size: 20px;
+    height: 25px;
+    border-bottom: 1px dotted #ffffff;
+  }
+
+  .example__range-after {
+    min-width: 48px;
+    font-size: 20px;
+    height: 25px;
+    border-bottom: 1px dotted #ffffff;
   }
 
   .example__image {
@@ -246,14 +408,20 @@
     margin-right: 43px;
   }
 
+  .example__value {
+    padding-top: 20px;
+  }
+
   .example__price {
+    width: 100%;
     margin-left: 0;
+    text-align: left;
   }
 
   .example__price-value {
     display: inline-block;
     padding-top: 0;
-    margin-left: 50px;
+    margin-left: 57px;
   }
 
   .example__value-description {
@@ -261,7 +429,7 @@
   }
 
   .example__results {
-    padding: 369px 0 70px 70px;
+    padding: 374px 0 55px 68px;
   }
 
   .example_range-wrapper {
