@@ -22,7 +22,7 @@
   display: flex;
   position: relative;
   align-items: center;
-  margin-bottom: 14px;
+  margin-bottom: 16px;
 
   &:last-child {
     margin-bottom: 0;
@@ -40,12 +40,46 @@
 }
 
 .form__input-text {
+
   padding: 11px 16px;
   flex-grow: 1;
   font: inherit;
   font-size: 16px;
   line-height: 18px;
+  text-transform: uppercase;
   color: #444444;
+  border: solid 1px rgba(205, 205, 205, 0.5);
+
+  &:hover {
+    border-color: rgba(205, 205, 205, 1);
+  }
+
+  &:active,
+  &:focus {
+    border: solid 2px #444444;
+    outline: none;
+    padding: 10px 15px;
+
+  }
+}
+
+.form__input-text:invalid {
+  border: 2px solid #ff8282;
+  padding: 10px 15px;
+}
+
+.form__input-text:invalid + svg {
+  fill: #ff8282;
+}
+
+.form__input-text:valid:not(:placeholder-shown) + svg {
+  fill: #68b738;
+}
+
+.form__input-text[type="number"]::-webkit-inner-spin-button,
+.form__input-text[type="number"]::-webkit-outer-spin-button {
+  appearance: none;
+  margin: 0;
 }
 
 .form__list--goals {
@@ -56,33 +90,52 @@
 }
 
 .form__item--goals {
+  margin-bottom: 13px;
   padding-left: 47px;
 }
 
-.form__input-radio {
+.form__label--radio {
   position: relative;
 
   &::before {
     content: "";
     position: absolute;
-    top: -15px;
-    left: -45px;
+    top: 0;
+    left: -48px;
     width: 30px;
     height: 30px;
-    border: solid 1px #ededed;
+    border: solid 1px #cdcdcd;
     border-radius: 50%;
   }
+}
 
-  &:checked::after {
+.form__input-radio:checked + .form__label--radio {
+  &::after {
     content: "";
     position: absolute;
-    top: -5px;
-    left: -35px;
+    top: 11px;
+    left: -38px;
     width: 12px;
     height: 12px;
     background: #68b738;
     border-radius: 50%;
   }
+}
+
+
+.form__label--checks {
+  &:hover::before {
+    border-color: #bababa;
+  }
+
+  &:active::before,
+  &:active::after {
+    opacity: 0.3;
+  }
+}
+
+.form__label--checks:active {
+  opacity: 0.3;
 }
 
 .form__legend {
@@ -110,6 +163,11 @@
 .form__input-text--email,
 .form__input-text--phone {
   padding-right: 40px;
+
+  &:active,
+  &:focus {
+    padding: 10px 39px 10px 15px;
+  }
 }
 
 .form__icon-mail {
@@ -133,9 +191,20 @@
   height: 150px;
   box-sizing: border-box;
   padding: 10px 13px;
-  border: 1px solid #cdcdcd;
   resize: none;
   font: inherit;
+  border: solid 1px rgba(205, 205, 205, 0.5);
+
+  &:hover {
+    border-color: rgba(205, 205, 205, 1);
+  }
+
+  &:active,
+  &:focus {
+    border: solid 2px #444444;
+    outline: none;
+    padding: 9px 12px;
+  }
 }
 
 .form__fieldset--extra {
@@ -151,25 +220,28 @@
   position: relative;
 }
 
-.form__input-checkbox::before {
+.form__label--extra::before {
   content: "";
   position: absolute;
-  left: -45px;
-  top: -15px;
+  left: -1px;
+  top: 2px;
   width: 30px;
   height: 30px;
   border: 1px solid #cdcdcd;
 }
 
-.form__input-checkbox:checked::after {
-  content: "";
-  position: absolute;
-  left: -39px;
-  top: -7px;
-  width: 22px;
-  height: 17px;
-  background-image: url("../img/icon-tick.svg");
+.form__input-checkbox:checked + .form__label--extra {
+  &::after {
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 9px;
+    width: 22px;
+    height: 17px;
+    background-image: url("../img/icon-tick.svg");
+  }
 }
+
 
 .form__submit {
   margin-bottom: 19px;
@@ -219,9 +291,25 @@
   }
 
   .form__input-text {
+    height: 32px;
+    padding: 9px 16px;
     font-size: 20px;
     line-height: 20px;
-    padding: 9px 16px;
+
+    &:focus,
+    &:active {
+      padding: 8px 14px;
+    }
+  }
+
+  .form__input-text--email,
+  .form__input-text--phone {
+    padding-right: 40px;
+
+    &:active,
+    &:focus {
+      padding-right: 39px;
+    }
   }
 
   .form__fieldset {
@@ -231,14 +319,14 @@
   .form__input-radio {
     &::before {
       top: -20px;
-      left: -59px;
+      left: -58px;
       width: 40px;
       height: 40px;
     }
 
     &:checked::after {
       top: -7px;
-      left: -47px;
+      left: -46px;
       width: 18px;
       height: 18px;
     }
@@ -276,6 +364,7 @@
     top: 19px;
     right: 16px;
   }
+
 
   .form__fieldset--contacts {
     margin-bottom: 64px;

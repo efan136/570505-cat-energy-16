@@ -72,6 +72,18 @@
     z-index: 100;
   }
 
+  .index-page .main-header::after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    width: 50%;
+    min-height: 696px;
+    background: url("../img/index-background-desktop@1x.jpg") no-repeat right top;
+    background-size: cover;
+  }
+
   .index-page .main-header__column::after {
     content: "";
     position: absolute;
@@ -80,13 +92,26 @@
     right: 0;
     width: 879px;
     min-height: 696px;
-    background: url("../img/index-can-desktop@1x.png") no-repeat 0 142px, url("../img/index-background-desktop@1x.jpg") no-repeat right top;
+    background: url("../img/index-can-desktop@1x.png") no-repeat 0 142px;
   }
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    .set-program__wrapper {
-      background-image: url("../img/index-can-desktop@2x.png"), url("../img/index-background-desktop@2x.jpg.jpg");
-      background-size: 709px auto, 320px auto;
+    .index-page .main-header::after {
+      top: 0;
+      right: 0;
+      width: 50%;
+      min-height: 696px;
+      background: url("../img/index-background-desktop@2x.jpg") no-repeat right top;
+      background-size: cover;
+    }
+
+    .index-page .main-header__column::after {
+      top: 0;
+      right: 0;
+      width: 879px;
+      min-height: 696px;
+      background: url("../img/index-can-desktop@2x.png") no-repeat 0 142px;
+      background-size: 552px auto;
     }
   }
 

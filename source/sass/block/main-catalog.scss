@@ -94,19 +94,21 @@
   }
 
   .main-catalog__img-link {
+    width: 324px;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    overflow: hidden;
   }
 
   .main-catalog__img-link--small {
-    width: 161px;
+    width: 324px;
     height: 172px;
     margin-top: -46px;
   }
 
   .main-catalog__img-link--small img {
     max-width: 324px;
+    flex-shrink: 1;
   }
 
   .main-catalog__img-link--big img {
@@ -114,7 +116,6 @@
   }
 
   .main-catalog__img-link--big {
-    width: 195px;
     height: 206px;
     margin-top: -80px;
   }
@@ -177,7 +178,7 @@
   }
 
   .main-catalog__img-link {
-    width: 100%;
+    width: 245px;
   }
 
   .main-catalog__img-link--small img {

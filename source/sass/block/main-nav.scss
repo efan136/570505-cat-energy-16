@@ -30,9 +30,9 @@
 .main-nav--opened .main-nav__menu-btn::before {
   content: "";
   position: absolute;
-  top: 0;
-  right: 0;
-  width: 25px;
+  top: 9px;
+  left: 0;
+  width: 23px;
   height: 2px;
   background-color: #222222;
   transform: rotate(45deg);
@@ -41,9 +41,9 @@
 .main-nav--opened .main-nav__menu-btn::after {
   content: "";
   position: absolute;
-  top: 0;
-  right: 0;
-  width: 25px;
+  top: 9px;
+  left: 0;
+  width: 23px;
   height: 2px;
   background-color: #222222;
   transform: rotate(-45deg);
@@ -73,6 +73,7 @@
 @media (min-width: 1440px) {
   .main-nav {
     position: relative;
+    margin-left: auto;
     z-index: 200;
     width: 570px;
   }
