@@ -90,14 +90,14 @@
     left: -20px;
     width: 320px;
     height: 240px;
-    background: url("img/before-mobile@1x.png") 0 0 no-repeat;
+    background: url("../img/before-mobile@1x.png") 0 0 no-repeat;
   }
 }
 
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .example__results {
     &::before {
-      background: url("img/before-mobile@2x.png") 0 0 no-repeat;
+      background: url("../img/before-mobile@2x.png") 0 0 no-repeat;
       background-size: 320px auto;
     }
   }
@@ -430,14 +430,14 @@ input[type="range"]:focus::-ms-fill-upper {
       left: 18px;
       width: 690px;
       height: 517px;
-      background: url("img/before-tablet@1x.png") 0 0 no-repeat;
+      background: url("../img/before-tablet@1x.png") 0 0 no-repeat;
     }
   }
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .example__results {
       &::before {
-        background: url("img/before-tablet@2x.png") 0 0 no-repeat;
+        background: url("../img/before-tablet@2x.png") 0 0 no-repeat;
         background-size: 690px auto;
       }
     }
@@ -545,14 +545,14 @@ input[type="range"]:focus::-ms-fill-upper {
       left: -5px;
       width: 690px;
       height: 517px;
-      background: url("img/before-desktop@1x.png") 0 0 no-repeat;
+      background: url("../img/before-desktop@1x.png") 0 0 no-repeat;
     }
   }
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .example__results {
       &::before {
-        background: url("img/before-desktop@2x.png") 0 0 no-repeat;
+        background: url("../img/before-desktop@2x.png") 0 0 no-repeat;
         background-size: 690px auto;
       }
     }
