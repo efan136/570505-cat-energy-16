@@ -1,3 +1,5 @@
+
+
 .form__container {
   width: 280px;
   margin: 0 auto;
@@ -16,13 +18,14 @@
 
 .form__list--pdata {
   margin-bottom: 23px;
+  width: 280px;
 }
 
 .form__item {
   display: flex;
-  position: relative;
   align-items: center;
-  margin-bottom: 16px;
+  position: relative;
+  margin-bottom: 13px;
 
   &:last-child {
     margin-bottom: 0;
@@ -30,25 +33,26 @@
 }
 
 .form__label {
-  display: block;
-  margin-right: 13px;
   padding: 6px 0;
+  margin-right: 16px;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   color: #222222;
 }
 
-.form__input-text {
 
-  padding: 11px 16px;
+.form__input-text {
+  height: 45px;
+  padding: 0 16px;
+  border: 1px solid rgba(205, 205, 205, 0.5);
   flex-grow: 1;
+  box-sizing: border-box;
   font: inherit;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   color: #444444;
-  border: solid 1px rgba(205, 205, 205, 0.5);
 
   &:hover {
     border-color: rgba(205, 205, 205, 1);
@@ -56,29 +60,19 @@
 
   &:active,
   &:focus {
-    border: solid 2px #444444;
     outline: none;
-    padding: 10px 15px;
+    border: 2px solid #444444;
+    padding: 0 15px;
+  }
+
+  &:invalid {
+    border: 2px solid #ff8282;
+    padding: 0 15px;
   }
 }
 
-.form__input-text:invalid {
-  border: 2px solid #ff8282;
-  padding: 10px 15px;
-}
-
-.form__input-text:invalid + svg {
-  fill: #ff8282;
-}
-
-.form__input-text:valid:not(:placeholder-shown) + svg {
-  fill: #68b738;
-}
-
-.form__input-text[type="number"]::-webkit-inner-spin-button,
-.form__input-text[type="number"]::-webkit-outer-spin-button {
-  appearance: none;
-  margin: 0;
+.form__input-text--age {
+  width: 165px;
 }
 
 .form__list--goals {
@@ -100,7 +94,7 @@
     content: "";
     position: absolute;
     top: 0;
-    left: -48px;
+    left: -47px;
     width: 30px;
     height: 30px;
     border: solid 1px #cdcdcd;
@@ -112,8 +106,8 @@
   &::after {
     content: "";
     position: absolute;
-    top: 11px;
-    left: -38px;
+    top: 10px;
+    left: -37px;
     width: 12px;
     height: 12px;
     background: #68b738;
@@ -165,8 +159,17 @@
 
   &:active,
   &:focus {
-    padding: 10px 39px 10px 15px;
+    padding: 0 39px 0 15px;
   }
+
+  &:invalid {
+    border: 2px solid #ff8282;
+    padding: 0 39px 0 15px;
+  }
+}
+
+.form__input-text:invalid + svg {
+  fill: #ff8282;
 }
 
 .form__icon-mail {
@@ -222,10 +225,10 @@
 .form__label--extra::before {
   content: "";
   position: absolute;
-  left: -1px;
+  left: 0;
   top: 2px;
-  width: 30px;
-  height: 30px;
+  width: 29px;
+  height: 28px;
   border: 1px solid #cdcdcd;
 }
 
@@ -233,14 +236,13 @@
   &::after {
     content: "";
     position: absolute;
-    left: 4px;
+    left: 5px;
     top: 9px;
     width: 22px;
     height: 17px;
     background-image: url("../img/icon-tick.svg");
   }
 }
-
 
 .form__submit {
   margin-bottom: 19px;
@@ -252,7 +254,7 @@
 .form__notice {
   margin: 0 0 33px 0;
   text-align: center;
-  font-family: "Arial", sans-serif;
+  font-family: "Arial", "Tahoma", sans-serif;
   font-size: 14px;
 }
 
@@ -268,6 +270,7 @@
   }
 
   .form__list--pdata {
+    width: 100%;
     margin-bottom: 72px;
   }
 
@@ -290,15 +293,18 @@
   }
 
   .form__input-text {
-    height: 32px;
-    padding: 9px 16px;
+    height: 52px;
     font-size: 20px;
     line-height: 20px;
 
     &:focus,
     &:active {
-      padding: 8px 14px;
+      padding: 8px 15px;
     }
+  }
+
+  .form__input-text:invalid {
+    padding: 8px 15px;
   }
 
   .form__input-text--email,
@@ -315,20 +321,18 @@
     margin-bottom: 75px;
   }
 
-  .form__input-radio {
-    &::before {
-      top: -20px;
-      left: -58px;
-      width: 40px;
-      height: 40px;
-    }
+  .form__label--radio::before {
+    top: -2px;
+    left: -59px;
+    width: 40px;
+    height: 40px;
+  }
 
-    &:checked::after {
-      top: -7px;
-      left: -46px;
-      width: 18px;
-      height: 18px;
-    }
+  .form__input-radio:checked + .form__label--radio::after {
+    top: 10px;
+    left: -47px;
+    width: 18px;
+    height: 18px;
   }
 
   .form__item--goals {
@@ -411,16 +415,16 @@
     margin-right: 0;
   }
 
-  .form__input-checkbox::before {
-    left: -58px;
-    top: -19px;
+  .form__label--extra::before {
+    left: -2px;
+    top: -2px;
     width: 38px;
     height: 38px;
   }
 
-  .form__input-checkbox:checked::after {
-    left: -49px;
-    top: -6px;
+  .form__input-checkbox:checked + .form__label--extra::after {
+    left: 8px;
+    top: 9px;
   }
 
   .form__extra-footer {

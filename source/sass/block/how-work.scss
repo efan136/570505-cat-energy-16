@@ -23,7 +23,7 @@
 .how-work__item {
   position: relative;
   padding-left: 81px;
-  font-family: "Arial", sans-serif;
+  font-family: "Arial", "Tahoma", sans-serif;
   margin-bottom: 22px;
   font-size: 14px;
   line-height: 20px;
@@ -132,7 +132,7 @@
   .how-work__item::after {
     content: "";
     position: absolute;
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 281px;
     line-height: 281px;
     font-weight: 400;
