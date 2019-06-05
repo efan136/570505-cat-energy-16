@@ -1,18 +1,39 @@
+* {
+  outline: 1px solid red;
+}
+
 .set-program {
+  position: relative;
   margin-bottom: 22px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top:0;
+    left: 50%;
+    margin-left: -160px;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 320px;
+    height: 64%;
+    background: url("../img/index-background-mobile@1x.jpg") no-repeat center 0 #63a73a;
+    background-size: cover;
+  }
 }
 
 .set-program__wrapper {
-  width: 280px;
-  padding: 29px 20px 0;
-  margin: 0 auto;
-  background: url("../img/index-can-mobile@1x.png")  no-repeat center bottom 43px, url("../img/index-background-mobile@1x.jpg") no-repeat center 0;
+  padding-top: 29px;
+  background: url("../img/index-can-mobile@1x.png")  no-repeat center bottom 43px;
+  background-size: 280px auto;
 }
 
+
+
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-  .set-program__wrapper {
+  .set-program {
     background-image: url("../img/index-can-mobile@2x.png"), url("../img/index-background-mobile@2x.jpg");
-    background-size: 280px auto, 320px auto;
+    background-size: 280px auto, 320 auto;
   }
 }
 
@@ -41,23 +62,27 @@
   .set-program {
     min-height: 869px;
     margin-bottom: 0;
+    background: none;
+
+    &::before {
+      content: none;
+    }
   }
 
   .set-program__wrapper {
-    width: 427px;
-    padding: 60px 222px 529px 120px;
+    padding: 58px 160px 530px 88px;
     background: url("../img/index-can-tablet@1x.jpg")  no-repeat center bottom;
+
   }
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    .set-program__wrapper {
+    .set-program {
       background-image: url("../img/index-can-tablet@2x.jpg");
       background-size: 709px auto;
     }
   }
 
   .set-program__heading {
-    width: 485px;
     margin-bottom: 40px;
     font-size: 60px;
     line-height: 60px;
@@ -85,15 +110,31 @@
 
 @media (min-width: 1440px) {
   .set-program {
+    position: static;
     min-height: 583px;
     margin-bottom: 80px;
+
+
+    &::after {
+      content: "";
+      position: absolute;
+      top:0;
+      right: 0;
+      z-index: -1;
+
+      width: 50%;
+      height: 100%;
+      background: url("../img/index-background-desktop@1x.jpg") no-repeat right  top #63a73a;
+      background-size: cover;
+
+    }
   }
 
   .set-program__wrapper {
-    width: 489px;
     margin: 0 auto;
-    padding: 112px 760px 190px 191px;
-    background: none;
+    padding: 110px 650px 150px 78px;
+    background: url("../img/index-can-desktop@1x.png")  no-repeat left 450px  top 30px;
+    background-size: 552px auto;
   }
 
   .set-program__heading {

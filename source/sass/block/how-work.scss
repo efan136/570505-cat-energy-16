@@ -2,12 +2,6 @@
   margin-bottom: 38px;
 }
 
-.how-work__wrapper {
-  width: 280px;
-  padding: 0 20px;
-  margin: 0 auto;
-}
-
 .how-work__heading {
   margin: 0 0 23px 0;
   font-size: 36px;
@@ -89,12 +83,6 @@
     border-bottom: 1px solid #e6e6e6;
   }
 
-  .how-work__wrapper {
-    width: 708px;
-    margin: 0 auto;
-    padding: 0 30px 0 30px;
-  }
-
   .how-work__heading {
     margin-bottom: 72px;
     font-size: 60px;
@@ -166,12 +154,6 @@
 @media (min-width: 1440px) {
   .how-work {
     border: none;
-  }
-
-  .how-work__wrapper {
-    width: 1220px;
-    padding: 0 110px 0 110px;
-    margin: 0 auto;
   }
 
   .how-work__heading {

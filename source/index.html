@@ -37,19 +37,21 @@
           </ul>
         </nav>
       </div>
+      <article class="set-program">
+        <div class="container">
+          <div class="set-program__wrapper">
+            <h2 class="visually-hidden">Подобрать программу питания для кота по параметрам</h2>
+            <h3 class="set-program__heading">Функциональное питание для котов</h3>
+            <p class="set-program__slogan">Занялся собой? Займись котом!</p>
+            <a class="set-program__link btn-global" href="form.html">Подобрать программу</a>
+          </div>
+        </div>
+      </article>
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">Функциональное питание для котов CAT ENERGY </h1>
-      <article class="set-program">
-        <div class="set-program__wrapper">
-          <h2 class="visually-hidden">Подобрать программу питания для кота по параметрам</h2>
-          <h3 class="set-program__heading">Функциональное питание для котов </h3>
-          <p class="set-program__slogan">Занялся собой? Займись котом!</p>
-          <a class="set-program__link btn-global" href="form.html">Подобрать программу</a>
-        </div>
-      </article>
       <section class="programms">
-        <div class="programms__wrapper">
+        <div class="container">
           <h2 class="visually-hidden">Выбрать готовую программу питания для кота </h2>
           <ul class="programms__list">
             <li class="programms__item programms__item--loose">
@@ -66,7 +68,7 @@
         </div>
       </section>
       <section class="how-work">
-        <div class="how-work__wrapper">
+        <div class="container">
           <h2 class="how-work__heading">Как это работает</h2>
           <ul class="how-work__list">
             <li class="how-work__item how-work__item--helthy">Функциональное питание содержит только полезные питательные вещества.</li>
@@ -77,7 +79,7 @@
         </div>
       </section>
       <section class="example">
-        <div class="example__wrapper">
+        <div class="container">
           <h2 class="example__heading">Живой пример</h2>
           <div class="example__columns">
             <div class="example__story">
@@ -93,11 +95,13 @@
                     <p class="example__value-description">затрачено времени</p>
                   </li>
                 </ul>
-                <p class="example__price">Затраты на питание:  <span class="example__price-value">15 000 руб<span></span></span></p>
+                <div class="example__price-wrapper">
+                <p class="example__price">Затраты на питание: </p>
+                <p class="example__price-value">15 000 руб</p>
+                </div>
               </div>
             </div>
             <div class="example__results">
-
               <div class="example_range-wrapper">
                 <p class="example__range-before">Было</p>
                 <input class="example__range" type="range" name="fat-cat">
@@ -108,17 +112,18 @@
         </div>
       </section>
       <section class="contacts">
-        <div class="contacts__container">
+        <div class="container">
           <div class="contacts__wrapper">
             <h2 class="visually-hidden">Контакты</h2>
             <h3 class="contacts__heading">приглашаем<br> к сотрудничеству дилеров!</h3>
-            <p class="contacts__adress">ул. Большая<br> Конюшенная, д. 19/8<br><span class="contacts__city">Санкт-Петербург</span></p>
+            <p class="contacts__adress">ул. Большая<br> Конюшенная, д. 19/8<br><span class="contacts__city"> Санкт-Петербург </span></p>
           </div>
         </div>
         <iframe class="contacts__map" src="https://yandex.ru/map-widget/v1/-/CCusFS8g" width="560" height="400"></iframe>
       </section>
     </main>
     <footer class="main-footer">
+      <div class="container">
       <div class="main-footer__wrapper">
         <a class="main-footer___logo logo-letters" href="">
           <picture class="logo-letters__picture">
@@ -158,6 +163,7 @@
           </svg>
         </a>
       </div>
+    </div>
     </footer>
     <script src="js/script.js"></script>
   </body>

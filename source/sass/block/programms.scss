@@ -2,12 +2,6 @@
   margin-bottom: 18px;
 }
 
-.programms__wrapper {
-  width: 280px;
-  padding: 0 20px;
-  margin: 0 auto;
-}
-
 .programms__list {
   @include reset ();
 }
@@ -119,12 +113,6 @@
     margin-bottom: 45px;
   }
 
-  .programms__wrapper {
-    width: 708px;
-    padding: 0 30px;
-    margin: 0 auto;
-  }
-
   .programms__item {
     min-height: 240px;
     margin-bottom: 32px;
@@ -195,13 +183,7 @@
 
 @media (min-width: 1440px) {
   .programms {
-    margin-bottom: 74px;
-  }
-
-  .programms__wrapper {
-    width: 1220px;
-    padding: 0 110px;
-    margin: 0 auto;
+    margin-bottom: 79px;
   }
 
   .programms__list {

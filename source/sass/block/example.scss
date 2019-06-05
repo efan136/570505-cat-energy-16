@@ -1,11 +1,6 @@
 .example {
+  padding: 20px 0 34px;
   background-color: #f2f2f2;
-}
-
-.example__wrapper {
-  width: 280px;
-  margin: 0 auto;
-  padding: 20px 20px 34px;
 }
 
 .example__heading {
@@ -34,6 +29,7 @@
 
 .example__item {
   position: relative;
+  border: 1px solid #cdcdcd;
 }
 
 .example__value {
@@ -47,7 +43,7 @@
   font-weight: 400;
   color: #111111;
   text-transform: uppercase;
-  border: 1px solid #cdcdcd;
+
   border-radius: 2px;
 }
 
@@ -68,14 +64,28 @@
   color: #444444;
 }
 
+.example__price-wrapper {
+  display: flex;
+  align-items: center;
+}
+
 .example__price {
+  width: 168px;
+  margin: 0 5px 0 0;
+  text-align: right;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #111111;
+  text-transform: uppercase;
+}
+
+.example__price-value {
+  width: 110px;
   margin: 0;
   font-size: 14px;
   line-height: 20px;
-  font-weight: 500;
-  color: #111111;
   text-transform: uppercase;
-  text-align: center;
 }
 
 .example__results {
@@ -83,10 +93,10 @@
   position: relative;
   padding-top: 309px;
 
-  &::before {
+  &::after {
     content: "";
     position: absolute;
-    top: 35px;
+    bottom: 50px;
     left: -20px;
     width: 320px;
     height: 240px;
@@ -96,7 +106,7 @@
 
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .example__results {
-    &::before {
+    &::after {
       background: url("../img/before-mobile@2x.png") 0 0 no-repeat;
       background-size: 320px auto;
     }
@@ -105,6 +115,7 @@
 
 .example_range-wrapper {
   display: flex;
+  align-items: center;
   margin: 0 auto;
   min-height: 16px;
 }
@@ -141,7 +152,7 @@
 
 input[type="range"] {
   appearance: none;
-  margin: 4px 0 0;
+  margin: 0;
   width: 84px;
 }
 
@@ -236,6 +247,7 @@ input[type="range"]:focus::-ms-fill-upper {
 @media (min-width: 768px) {
   .example {
     margin-top: -33px;
+    padding-top: 0;
     background: #ffffff;
     background-image: linear-gradient(transparent 57%, #f2f2f2 50%);
     border-top: 1px solid #f2f2f2;
@@ -249,17 +261,11 @@ input[type="range"]:focus::-ms-fill-upper {
     font-weight: 400;
   }
 
-  .example__wrapper {
-    width: 708px;
-    mardin: 0 auto;
-    padding: 0 30px;
-  }
-
   input[type="range"] {
     appearance: none;
     width: 428px;
     height: 45px;
-    margin-top: -11px;
+    margin-top: -5px;
     border-radius: 6px;
     background-color: #f2f2f2;
   }
@@ -372,7 +378,7 @@ input[type="range"]:focus::-ms-fill-upper {
   }
 
   .example__columns {
-    padding: 0 0 54px;
+    padding: 0 0 62px;
   }
 
   .example__description {
@@ -407,8 +413,14 @@ input[type="range"]:focus::-ms-fill-upper {
     justify-content: space-between;
   }
 
+  .example__price-wrapper {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
   .example__price {
     width: 200px;
+    margin-right: 0;
     padding-top: 10px;
     font-size: 20px;
     line-height: 20px;
@@ -417,17 +429,20 @@ input[type="range"]:focus::-ms-fill-upper {
   }
 
   .example__price-value {
-    display: block;
+    width: 200px;
+    text-align: right;
     padding-top: 10px;
+    font-size: 20px;
+    line-height: 20px;
     font-weight: 500;
   }
 
   .example__results {
-    padding: 369px 0 0;
+    padding: 361px 0 0;
 
-    &::before {
-      top: -170px;
-      left: 18px;
+    &::after {
+      left: 15px;
+      bottom: 60px;
       width: 690px;
       height: 517px;
       background: url("../img/before-tablet@1x.png") 0 0 no-repeat;
@@ -436,7 +451,7 @@ input[type="range"]:focus::-ms-fill-upper {
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .example__results {
-      &::before {
+      &::after {
         background: url("../img/before-tablet@2x.png") 0 0 no-repeat;
         background-size: 690px auto;
       }
@@ -444,20 +459,21 @@ input[type="range"]:focus::-ms-fill-upper {
   }
 
   .example_range-wrapper {
+    width: 100%;
     min-height: 40px;
   }
 
   .example__range-before {
-    min-width: 48px;
+    width: 117px;
     font-size: 20px;
-    height: 25px;
+    min-height: 25px;
     border-bottom: 1px dotted #ffffff;
   }
 
   .example__range-after {
-    min-width: 48px;
+    width: 122px;
     font-size: 20px;
-    height: 25px;
+    min-height: 25px;
     border-bottom: 1px dotted #ffffff;
   }
 
@@ -470,14 +486,9 @@ input[type="range"]:focus::-ms-fill-upper {
 @media (min-width: 1440px) {
   .example {
     margin-top: 0;
+    padding-bottom: 0;
     background-image: linear-gradient(transparent 20%, #f2f2f2 20%);
     border-top: none;
-  }
-
-  .example__wrapper {
-    width: 1220px;
-    padding: 0 110px 0 110px;
-    margin: 0 auto;
   }
 
   .example__heading {
@@ -521,16 +532,20 @@ input[type="range"]:focus::-ms-fill-upper {
     padding-top: 20px;
   }
 
+  .example__price-wrapper {
+    flex-direction: row;
+    align-items: center;
+  }
+
   .example__price {
-    width: 100%;
-    margin-left: 0;
+    width: 210px;
+    margin-right: 28px;
     text-align: left;
   }
 
   .example__price-value {
-    display: inline-block;
-    padding-top: 0;
-    margin-left: 57px;
+    text-align: left;
+
   }
 
   .example__value-description {
@@ -538,11 +553,13 @@ input[type="range"]:focus::-ms-fill-upper {
   }
 
   .example__results {
-    padding: 374px 0 55px 68px;
+    width: 587px;
 
-    &::before {
-      top: -185px;
-      left: -5px;
+    padding: 355px 0 55px 68px;
+
+    &::after {
+      bottom: 138px;
+      left: 5px;
       width: 690px;
       height: 517px;
       background: url("../img/before-desktop@1x.png") 0 0 no-repeat;
@@ -551,7 +568,7 @@ input[type="range"]:focus::-ms-fill-upper {
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .example__results {
-      &::before {
+      &::after {
         background: url("../img/before-desktop@2x.png") 0 0 no-repeat;
         background-size: 690px auto;
       }
@@ -561,5 +578,17 @@ input[type="range"]:focus::-ms-fill-upper {
   .example_range-wrapper {
     margin-top: auto;
     margin-left: auto;
+  }
+
+  .example__range-before {
+    width: 70px;
+  }
+
+    .example__range-after {
+    width: 55px;
+  }
+
+    input[type="range"] {
+    margin-top: 0;
   }
 }
