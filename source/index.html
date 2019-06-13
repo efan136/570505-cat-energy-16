@@ -102,10 +102,15 @@
               </div>
             </div>
             <div class="example__results">
+
               <div class="example_range-wrapper">
+                <div id="before" class="example__results-slide">
+                  <div class="example__results-slide-img"></div>
+                </div>
                 <p class="example__range-before">Было</p>
-                <input class="example__range" type="range" name="fat-cat">
+                <input class="example__range" type="range" name="fat-cat" id="r1" oninput="fun1()" min="0"  max="100" step="1" value="100">
                 <p class="example__range-after">Стало</p>
+
               </div>
             </div>
           </div>
@@ -166,5 +171,12 @@
     </div>
     </footer>
     <script src="js/script.js"></script>
+    <script type="text/javascript">
+      function fun1() {
+    var rng = document.getElementById('r1'); //rng - это Input
+    var div = document.getElementById('before'); // div - блок test
+    div.style.width = rng.value +'%';
+}
+    </script>
   </body>
 </html>

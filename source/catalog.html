@@ -39,10 +39,12 @@
     </header>
     <main class="page-main">
       <div class="page-main__heading-wrapper">
-        <h1 class="page-main__heading">Каталог продукции</h1>
+        <div class="container">
+          <h1 class="page-main__heading">Каталог продукции</h1>
+        </div>
       </div>
       <section class="main-catalog">
-        <div class="main-catalog__wrapper">
+        <div class="container">
           <h2 class="visually-hidden">Каталог основных товаров</h2>
           <ul class="main-catalog__list">
             <li class="main-catalog__item">
@@ -308,7 +310,7 @@
         </div>
       </section>
       <section class="extra">
-        <div class="extra__wrapper">
+        <div class="container">
           <h2 class="extra__heading">Дополнительные товары</h2>
           <div class="extra__columns">
             <ul class="extra__list">
@@ -360,55 +362,57 @@
         </div>
       </section>
       <section class="contacts">
-        <div class="contacts__container">
+        <div class="container">
           <div class="contacts__wrapper">
             <h2 class="visually-hidden">Контакты</h2>
             <h3 class="contacts__heading">приглашаем<br> к сотрудничеству дилеров!</h3>
-            <p class="contacts__adress">ул. Большая<br> Конюшенная, д. 19/8<br><span class="contacts__city">Санкт-Петербург</span></p>
+            <p class="contacts__adress">ул. Большая<br> Конюшенная, д. 19/8<br><span class="contacts__city"> Санкт-Петербург </span></p>
           </div>
         </div>
         <iframe class="contacts__map" src="https://yandex.ru/map-widget/v1/-/CCusFS8g" width="560" height="400"></iframe>
       </section>
     </main>
     <footer class="main-footer">
-      <div class="main-footer__wrapper">
-        <a class="main-footer___logo logo-letters" href="">
-          <picture class="logo-letters__picture">
-            <img class="logo-letters__img" src="img/logo-footer.svg" width="128" height="24" alt="Cat energy">
-          </picture>
-        </a>
-        <ul class="footer__list social-list">
-          <li class="social-list__item">
-            <a class="social-list__link" href="">
-              <span class="visually-hidden">Мы Вконтакте</span>
-              <svg class="social-list__link--vk" width="22" height="12">
-                <use xlink:href="#icon-vk"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-list__item">
-            <a class="social-list__link" href="">
-              <span class="visually-hidden">Наш инстаграм</span>
-              <svg class="social-list__link--insta" width="17" height="17">
-                <use xlink:href="#icon-insta"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-list__item">
-            <a class="social-list__link" href="">
-              <span class="visually-hidden">Наш фейсбук</span>
-              <svg class="social-list__link--fb" width="10" height="19">
-                <use xlink:href="#icon-fb"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-        <a class="footer__copyright copiright" href="https://htmlacademy.ru/intensive/adaptive">
-          <p class="copyright__text">HTML Academy</p>
-          <svg class="copyright__icon" width="27" height="34">
-            <use xlink:href="#icon-htmlacademy"></use>
-          </svg>
-        </a>
+      <div class="container">
+        <div class="main-footer__wrapper">
+          <a class="main-footer___logo logo-letters" href="">
+            <picture class="logo-letters__picture">
+              <img class="logo-letters__img" src="img/logo-footer.svg" width="128" height="24" alt="Cat energy">
+            </picture>
+          </a>
+          <ul class="footer__list social-list">
+            <li class="social-list__item">
+              <a class="social-list__link" href="">
+                <span class="visually-hidden">Мы Вконтакте</span>
+                <svg class="social-list__link--vk" width="22" height="12">
+                  <use xlink:href="#icon-vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link" href="">
+                <span class="visually-hidden">Наш инстаграм</span>
+                <svg class="social-list__link--insta" width="17" height="17">
+                  <use xlink:href="#icon-insta"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link" href="">
+                <span class="visually-hidden">Наш фейсбук</span>
+                <svg class="social-list__link--fb" width="10" height="19">
+                  <use xlink:href="#icon-fb"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <a class="footer__copyright copiright" href="https://htmlacademy.ru/intensive/adaptive">
+            <p class="copyright__text">HTML Academy</p>
+            <svg class="copyright__icon" width="27" height="34">
+              <use xlink:href="#icon-htmlacademy"></use>
+            </svg>
+          </a>
+        </div>
       </div>
     </footer>
     <script src="js/script.js"></script>

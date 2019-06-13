@@ -1,20 +1,20 @@
-.main-catalog__wrapper {
-  width: 320px;
-  margin: 0 auto;
-}
-
-.main-catalog__box {
-  padding: 0 20px;
-}
-
 .main-catalog__list {
   @include reset ();
 }
 
-
 .main-catalog__item {
+  position: relative;
   padding-bottom: 24px;
-  border-bottom: 1px solid #ededed;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: -20px;
+    bottom: 0;
+    width: 320px;
+    height: 1px;
+    background-color: #ededed;
+  }
 }
 
 .main-catalog__box-wrapper {
@@ -58,6 +58,7 @@
 
 .main-catalog__parametr,
 .main-catalog__value {
+  width: 66px;
   padding: 0;
   font-size: 12px;
   line-height: 15px;
@@ -71,22 +72,22 @@
 }
 
 @media (min-width: 768px) {
-  .main-catalog__wrapper {
-    width: 708px;
-    padding: 0 30px;
-  }
-
   .main-catalog__list {
     display: flex;
     flex-wrap: wrap;
   }
 
   .main-catalog__item {
+    display: flex;
     background-color: #f2f2f2;
     margin-right: 58px;
     margin-bottom: 140px;
     padding-bottom: 0;
     text-align: center;
+
+    &::after {
+      content: none;
+    }
 
     &:nth-child(2n) {
       margin-right: 0;
@@ -95,6 +96,7 @@
 
   .main-catalog__img-link {
     width: 324px;
+    margin-bottom: 37px;
     display: flex;
     justify-content: center;
     overflow: hidden;
@@ -123,37 +125,44 @@
   .main-catalog__box {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     width: 249px;
     padding: 0 38px 40px;
   }
 
   .main-catalog__box-wrapper {
     display: flex;
+    height: 100%;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
   }
 
   .main-catalog__item-wrapper {
     width: 100%;
-    padding-top: 34px;
+    padding-top: 0;
     display: flex;
+    flex-grow: 1;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
   }
 
   .main-catalog__title-link {
+    display: flex;
     width: 140px;
     margin-bottom: 18px;
   }
 
   .main-catalog__title {
+    display: flex;
     font-size: 20px;
     line-height: 20px;
     text-align: center;
   }
 
   .main-catalog__description-table {
-    margin-bottom: 31px;
+    margin-bottom: 32px;
   }
 
   .main-catalog__value {
@@ -161,18 +170,13 @@
   }
 
   .main-catalog__parametr {
-    padding: 8px 0;
+    padding: 8px 0 7px;
     font-size: 16px;
     text-align: left;
   }
 }
 
 @media (min-width: 1440px) {
-  .main-catalog__wrapper {
-    width: 1220px;
-    padding: 0 110px;
-  }
-
   .main-catalog__box {
     width: 169px;
   }
